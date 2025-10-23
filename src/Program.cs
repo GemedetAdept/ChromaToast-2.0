@@ -1,4 +1,4 @@
-﻿using ChromaToast.Convert;
+﻿using ChromaToast.Color;
 
 String input = "convert rgb 50 50 50";
 string[] inputSplit = Parse.SplitCommand(input);
