@@ -13,6 +13,11 @@ namespace ChromaToast.Color {
 			return clampedValue;
 		}
 
+		public static void PrintValues(string valueType, float value1, float value2, float value3) {
+
+			Console.WriteLine(valueType, value1, value2, value3);
+		}
+
 		public class RGB {
 			public float Red {get; set;}
 			public float Green {get; set;}
@@ -22,6 +27,8 @@ namespace ChromaToast.Color {
 				Red = ClampValue(0.0f, red, 1.0f);
 				Green = ClampValue(0.0f, green, 1.0f);
 				Blue = ClampValue(0.0f, blue, 1.0f);
+
+				PrintValues("RGB", Red, Green, Blue);
 			}
 		}
 
@@ -34,6 +41,8 @@ namespace ChromaToast.Color {
 				Hue = ClampValue(0.0f, hue, 1.0f);
 				Saturation = ClampValue(0.0f, saturation, 1.0f);
 				ValueHSV = ClampValue(0.0f, valueHSV, 1.0f);
+
+				PrintValues("HSV", Red, Green, Blue);
 			}
 		}
 
@@ -46,6 +55,8 @@ namespace ChromaToast.Color {
 				Hue = ClampValue(0.0f, hue, 1.0f);
 				Saturation = ClampValue(0.0f, saturation, 1.0f);
 				Lightness = ClampValue(0.0f, lightness, 1.0f);
+
+				PrintValues("HSL", Red, Green, Blue);
 			}
 		}
 
