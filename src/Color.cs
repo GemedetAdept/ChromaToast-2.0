@@ -38,5 +38,15 @@ namespace ChromaToast.Color {
 				Lightness = lightness;
 			}
 		}
+
+		public class HEX {
+			public int IntHEX {get; set;}
+			public string StringHEX {get; set;}
+
+			public HEX(string stringHEX) {
+				StringHEX = stringHEX;
+				// convert StringHEX into IntHEX
+			}
+		}
 	}
 }
