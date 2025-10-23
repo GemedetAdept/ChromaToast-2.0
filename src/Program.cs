@@ -1,8 +1,3 @@
-﻿using ChromaToast.Color;
+using ChromaToast.Color;
 
-String input = "convert rgb 50 50 50";
-string[] inputSplit = Parse.SplitCommand(input);
-
-foreach (string word in inputSplit) {
-	Console.WriteLine(word);
-}
+Color.RGB newRGB = new Color.RGB(red: 0.5f, green: 0.5f, blue: 0.5f);

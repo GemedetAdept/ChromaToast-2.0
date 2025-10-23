@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vivia\\Programming\\C_sharp\\ChromaToast\\src\\ChromaToast.csproj": {}
+    "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\ChromaToast.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vivia\\Programming\\C_sharp\\ChromaToast\\src\\ChromaToast.csproj": {
+    "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\ChromaToast.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vivia\\Programming\\C_sharp\\ChromaToast\\src\\ChromaToast.csproj",
+        "projectUniqueName": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\ChromaToast.csproj",
         "projectName": "ChromaToast",
-        "projectPath": "C:\\Users\\vivia\\Programming\\C_sharp\\ChromaToast\\src\\ChromaToast.csproj",
+        "projectPath": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\ChromaToast.csproj",
         "packagesPath": "C:\\Users\\vivia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vivia\\Programming\\C_sharp\\ChromaToast\\src\\obj\\",
+        "outputPath": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vivia\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\vivia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

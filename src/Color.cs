@@ -3,8 +3,8 @@ namespace ChromaToast.Color {
 	public class Color {
 		public Color() {}
 
-		internal float ClampValue(float floor, float input, float ceiling) {
-			float clampedValue = 0.0;
+		internal static float ClampValue(float floor, float input, float ceiling) {
+			float clampedValue = 0.0f;
 
 			if (input < floor) { clampedValue = floor; }
 			if (input > ceiling) { clampedValue = ceiling; }
@@ -19,9 +19,9 @@ namespace ChromaToast.Color {
 			public float Blue {get; set;}
 
 			public RGB(float red, float green, float blue) {
-				Red = ClampValue(0.0, red, 1.0);
-				Green = ClampValue(0.0, green, 1.0);
-				Blue = ClampValue(0.0, blue, 1.0);
+				Red = ClampValue(0.0f, red, 1.0f);
+				Green = ClampValue(0.0f, green, 1.0f);
+				Blue = ClampValue(0.0f, blue, 1.0f);
 			}
 		}
 
@@ -31,9 +31,9 @@ namespace ChromaToast.Color {
 			public float ValueHSV {get; set;}
 
 			public HSV(float hue, float saturation, float valueHSV) {
-				Hue = ClampValue(0.0, hue, 1.0);
-				Saturation = ClampValue(0.0, saturation, 1.0);
-				ValueHSV = ClampValue(0.0, valueHSV, 1.0);
+				Hue = ClampValue(0.0f, hue, 1.0f);
+				Saturation = ClampValue(0.0f, saturation, 1.0f);
+				ValueHSV = ClampValue(0.0f, valueHSV, 1.0f);
 			}
 		}
 
@@ -43,9 +43,9 @@ namespace ChromaToast.Color {
 			public float Lightness {get; set;}
 
 			public HSL(float hue, float saturation, float lightness) {
-				Hue = ClampValue(0.0, hue, 1.0);
-				Saturation = ClampValue(0.0, saturation, 1.0);
-				Lightness = ClampValue(0.0, lightness, 1.0);
+				Hue = ClampValue(0.0f, hue, 1.0f);
+				Saturation = ClampValue(0.0f, saturation, 1.0f);
+				Lightness = ClampValue(0.0f, lightness, 1.0f);
 			}
 		}
 
