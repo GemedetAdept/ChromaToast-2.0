@@ -18,8 +18,6 @@ namespace ChromaToast.Color {
 		internal static string ClampValues(string inputHEX) {
 			string clampedHEX;
 			char[] clampedCharArray = new char[6];
-
-			inputHEX = inputHEX.ToUpper();
 			char[] inputCharArray = inputHEX.ToCharArray();
 			int[] inputIntArray = new int[6];
 
@@ -50,7 +48,19 @@ namespace ChromaToast.Color {
 
 		public static void PrintValues(string valueType, string value1) {
 
-            Console.WriteLine("{0}, {1}", valueType, value1);
+            Console.WriteLine("{0} : {1}", valueType, value1);
+		}
+
+		public static void PrintValues(string valueType, int[] values) {
+			string outputString = "";
+			
+			foreach(int intValue in values) {
+				string intString = System.Convert.ToString(intValue);
+
+				outputString += $"{intString} ";
+			}
+
+			Console.WriteLine("{0} : {1}", valueType, outputString);
 		}
 
 		public class RGB {
@@ -96,15 +106,28 @@ namespace ChromaToast.Color {
 		}
 
 		public class HEX {
-			public int IntHEX {get; set;}
+			public int[] IntHEX {get; set;}
 			public string StringHEX {get; set;}
 
 			public HEX(string stringHEX) {
+				stringHEX = stringHEX.ToUpper();
 				StringHEX = ClampValues(stringHEX);
 
-				PrintValues("HEX", StringHEX);
+				IntHEX = StringHEXtoIntHEX(StringHEX);
 
-				// convert StringHEX into IntHEX
+				PrintValues("StringHEX", StringHEX);
+				PrintValues("IntHEX", IntHEX);
+			}
+
+			private static int[] StringHEXtoIntHEX(string inputHEX) {
+				char[] charArray = inputHEX.ToCharArray();
+				int[] intArray = new int[6];
+
+				for (int i=0; i < charArray.Length; i++) { 
+					intArray[i] = System.Convert.ToInt32(charArray[i]);
+				}
+
+				return intArray;
 			}
 		}
 	}
