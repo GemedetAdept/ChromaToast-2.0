@@ -1,0 +1,14 @@
+C:\Users\vivia\Programming\C_sharp\ChromaToast\src\bin\Debug\net9.0\ChromaToast.exe
+C:\Users\vivia\Programming\C_sharp\ChromaToast\src\bin\Debug\net9.0\ChromaToast.deps.json
+C:\Users\vivia\Programming\C_sharp\ChromaToast\src\bin\Debug\net9.0\ChromaToast.runtimeconfig.json
+C:\Users\vivia\Programming\C_sharp\ChromaToast\src\bin\Debug\net9.0\ChromaToast.dll
+C:\Users\vivia\Programming\C_sharp\ChromaToast\src\bin\Debug\net9.0\ChromaToast.pdb
+C:\Users\vivia\Programming\C_sharp\ChromaToast\src\obj\Debug\net9.0\ChromaToast.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vivia\Programming\C_sharp\ChromaToast\src\obj\Debug\net9.0\ChromaToast.AssemblyInfoInputs.cache
+C:\Users\vivia\Programming\C_sharp\ChromaToast\src\obj\Debug\net9.0\ChromaToast.AssemblyInfo.cs
+C:\Users\vivia\Programming\C_sharp\ChromaToast\src\obj\Debug\net9.0\ChromaToast.csproj.CoreCompileInputs.cache
+C:\Users\vivia\Programming\C_sharp\ChromaToast\src\obj\Debug\net9.0\ChromaToast.dll
+C:\Users\vivia\Programming\C_sharp\ChromaToast\src\obj\Debug\net9.0\refint\ChromaToast.dll
+C:\Users\vivia\Programming\C_sharp\ChromaToast\src\obj\Debug\net9.0\ChromaToast.pdb
+C:\Users\vivia\Programming\C_sharp\ChromaToast\src\obj\Debug\net9.0\ChromaToast.genruntimeconfig.cache
+C:\Users\vivia\Programming\C_sharp\ChromaToast\src\obj\Debug\net9.0\ref\ChromaToast.dll

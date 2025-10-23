@@ -1,0 +1,6 @@
+* System.String
+convert
+	-rgb [R, int (0-255)] [G, int (0-255)] [B, int (0-255)]
+	-hsv []
+	-hsl []
+	-hex []
