@@ -1,0 +1,10 @@
+https://www.reddit.com/r/learnprogramming/comments/mumrgn/how_to_plan_and_build_a_programming_project_a/
+	
+    What is the project?
+    What is the MVP (Minimal Viable Product)?
+    What are the nice to haves?
+    When will the project be complete?
+
+    The project is to create an open-source color palette generator with a graphical interface.
+    The MVP is having the basic color harmony categories and the ability to input colors to generate from
+    Nice to have: saving palettes, color space conversions, locking colors in place and generating based on those, graphical color wheel selection & ability to switch between HSV, HSL, and RGB wheels/graphs
