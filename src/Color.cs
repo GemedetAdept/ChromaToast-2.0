@@ -14,5 +14,17 @@ namespace ChromaToast.Color {
 				Blue = blue;
 			}
 		}
+
+		public class HSV {
+			public float Hue {get; set;}
+			public float Saturation {get; set;}
+			public float ValueHSV {get; set;}
+
+			public HSV(float hue, float saturation, float valueHSV) {
+				Hue = hue;
+				Saturation = saturation;
+				ValueHSV = valueHSV;
+			}
+		}
 	}
 }
