@@ -3,6 +3,16 @@ namespace ChromaToast.Color {
 	public class Color {
 		public Color() {}
 
+		internal float ClampValue(float floor, float input, float ceiling) {
+			float clampedValue = 0.0;
+
+			if (input < floor) { clampedValue = floor; }
+			if (input > ceiling) { clampedValue = ceiling; }
+			else { clampedValue = input; }
+
+			return clampedValue;
+		}
+
 		public class RGB {
 			public float Red {get; set;}
 			public float Green {get; set;}
