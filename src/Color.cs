@@ -7,7 +7,7 @@ namespace ChromaToast.Color {
 			float clampedValue = 0.0f;
 
 			if (input < floor) { clampedValue = floor; }
-			if (input > ceiling) { clampedValue = ceiling; }
+			else if (input > ceiling) { clampedValue = ceiling; }
 			else { clampedValue = input; }
 
 			return clampedValue;
@@ -15,7 +15,7 @@ namespace ChromaToast.Color {
 
 		public static void PrintValues(string valueType, float value1, float value2, float value3) {
 
-			Console.WriteLine(valueType, value1, value2, value3);
+			Console.WriteLine("{0} : {1}, {2}, {3}", valueType, value1, value2, value3);
 		}
 
 		public class RGB {
@@ -42,7 +42,7 @@ namespace ChromaToast.Color {
 				Saturation = ClampValue(0.0f, saturation, 1.0f);
 				ValueHSV = ClampValue(0.0f, valueHSV, 1.0f);
 
-				PrintValues("HSV", Red, Green, Blue);
+				PrintValues("HSV", Hue, Saturation, ValueHSV);
 			}
 		}
 
@@ -56,7 +56,7 @@ namespace ChromaToast.Color {
 				Saturation = ClampValue(0.0f, saturation, 1.0f);
 				Lightness = ClampValue(0.0f, lightness, 1.0f);
 
-				PrintValues("HSL", Red, Green, Blue);
+				PrintValues("HSL", Hue, Saturation, Lightness);
 			}
 		}
 
