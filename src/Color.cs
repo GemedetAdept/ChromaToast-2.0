@@ -13,6 +13,32 @@ namespace ChromaToast.Color {
 			return clampedValue;
 		}
 
+		internal static string ClampHEX(string inputHEX) {
+			string clampedHEX;
+			char[] clampedCharArray = new char[6];
+			char[] inputCharArray = inputHEX.ToCharArray();
+			int[] inputIntArray = new int[6];
+
+			for (int i=0; i < inputCharArray.Length; i++) {
+				inputIntArray[i] = Convert.ToInt32(inputCharArray[i]);
+			}
+
+			int floorHEX = Convert.ToInt32('0');
+			int ceilingHEX = Convert.ToInt32('F');
+
+			for (int i=0; i < inputIntArray; i++) { 
+				if (inputIntArray[i] < floorHEX) { inputIntArray[i] = floorHEX; }
+				if (inputIntArray[i] > ceilingHEX) { inputIntArray[i] = ceilingHEX;}
+			}
+
+			for (int i=0; i < inputIntArray; i++) {
+				clampedCharArray[i] = Convert.ToChar(inputIntArray[i]);
+			}
+
+			clampedHEX = new string(clampedCharArray);
+			return clampedHEX;
+		}
+
 		public static void PrintValues(string valueType, float value1, float value2, float value3) {
 
 			Console.WriteLine("{0} : {1}, {2}, {3}", valueType, value1, value2, value3);
