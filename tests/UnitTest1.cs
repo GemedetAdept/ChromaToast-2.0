@@ -1,5 +1,7 @@
+using ChromaToast.Color;
+
 namespace tests {
-	public class UnitTest1 {
+	public class RGBTests {
 		[Fact]
 		public void Test1() {
 

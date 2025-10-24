@@ -1,22 +1,22 @@
 namespace ChromaToast.Color {
 
 	public class Convert {
-		internal static Convert() { }
+		static Convert() { }
 
 		public class RGB {
-			internal static RGB() { }
+			static RGB() { }
 		}
 
 		public class HSV {
-			internal static HSV() { }
+			static HSV() { }
 		}
 
 		public class HSL {
-			internal static HSL() { }
+			static HSL() { }
 		}
 
 		public class HEX {
-			internal static HEX() { }
+			static HEX() { }
 		}
 	}
 }
