@@ -10,7 +10,10 @@ namespace ChromaToast.Tests {
 			float valueBlue = 1.0f;
 			float expected = 0.0f;
 
-			var colorRGB = new Color.RGB(valueRed, valueGreen, valueBlue);
+			var colorRGB = new ChromaToast.Color.Color.RGB(valueRed, valueGreen, valueBlue);
+			float result = colorRGB.Red;
+
+			Assert.Equal(expected, result);
 		}
 	}
 }

@@ -5,7 +5,7 @@ namespace ChromaToast.Color {
 	public class Color {
 		public Color() {}
 
-		public static float ClampValues(float floor, float input, float ceiling) {
+		internal static float ClampValues(float floor, float input, float ceiling) {
 			float clampedValue = 0.0f;
 
 			if (input < floor) { clampedValue = floor; }
@@ -15,7 +15,7 @@ namespace ChromaToast.Color {
 			return clampedValue;
 		}
 
-		public static string ClampValues(string inputHEX) {
+		internal static string ClampValues(string inputHEX) {
 			string clampedHEX;
 			char[] clampedCharArray = new char[6];
 			char[] inputCharArray = inputHEX.ToCharArray();
@@ -62,73 +62,73 @@ namespace ChromaToast.Color {
 
 			Console.WriteLine("{0} : {1}", valueType, outputString);
 		}
-	}
 
-	public class RGB {
-		public float Red {get; set;}
-		public float Green {get; set;}
-		public float Blue {get; set;}
+		public class RGB {
+			public float Red {get; set;}
+			public float Green {get; set;}
+			public float Blue {get; set;}
 
-		public RGB(float red, float green, float blue) {
-			Red = Color.ClampValues(0.0f, red, 1.0f);
-			Green = Color.ClampValues(0.0f, green, 1.0f);
-			Blue = Color.ClampValues(0.0f, blue, 1.0f);
+			public RGB(float red, float green, float blue) {
+				Red = ClampValues(0.0f, red, 1.0f);
+				Green = ClampValues(0.0f, green, 1.0f);
+				Blue = ClampValues(0.0f, blue, 1.0f);
 
-			Color.PrintValues("RGB", Red, Green, Blue);
-		}
-	}
-
-	public class HSV {
-		public float Hue {get; set;}
-		public float Saturation {get; set;}
-		public float ValueHSV {get; set;}
-
-		public HSV(float hue, float saturation, float valueHSV) {
-			Hue = Color.ClampValues(0.0f, hue, 1.0f);
-			Saturation = Color.ClampValues(0.0f, saturation, 1.0f);
-			ValueHSV = Color.ClampValues(0.0f, valueHSV, 1.0f);
-
-			Color.PrintValues("HSV", Hue, Saturation, ValueHSV);
-		}
-	}
-
-	public class HSL {
-		public float Hue {get; set;}
-		public float Saturation {get; set;}
-		public float Lightness {get; set;}
-
-		public HSL(float hue, float saturation, float lightness) {
-			Hue = Color.ClampValues(0.0f, hue, 1.0f);
-			Saturation = Color.ClampValues(0.0f, saturation, 1.0f);
-			Lightness = Color.ClampValues(0.0f, lightness, 1.0f);
-
-			Color.PrintValues("HSL", Hue, Saturation, Lightness);
-		}
-	}
-
-	public class HEX {
-		public int[] IntHEX {get; set;}
-		public string StringHEX {get; set;}
-
-		public HEX(string stringHEX) {
-			stringHEX = stringHEX.ToUpper();
-			StringHEX = Color.ClampValues(stringHEX);
-
-			IntHEX = StringHEXtoIntHEX(StringHEX);
-
-			Color.PrintValues("StringHEX", StringHEX);
-			Color.PrintValues("IntHEX", IntHEX);
+				PrintValues("RGB", Red, Green, Blue);
+			}
 		}
 
-		private static int[] StringHEXtoIntHEX(string inputHEX) {
-			char[] charArray = inputHEX.ToCharArray();
-			int[] intArray = new int[6];
+		public class HSV {
+			public float Hue {get; set;}
+			public float Saturation {get; set;}
+			public float ValueHSV {get; set;}
 
-			for (int i=0; i < charArray.Length; i++) { 
-				intArray[i] = System.Convert.ToInt32(charArray[i]);
+			public HSV(float hue, float saturation, float valueHSV) {
+				Hue = ClampValues(0.0f, hue, 1.0f);
+				Saturation = ClampValues(0.0f, saturation, 1.0f);
+				ValueHSV = ClampValues(0.0f, valueHSV, 1.0f);
+
+				PrintValues("HSV", Hue, Saturation, ValueHSV);
+			}
+		}
+
+		public class HSL {
+			public float Hue {get; set;}
+			public float Saturation {get; set;}
+			public float Lightness {get; set;}
+
+			public HSL(float hue, float saturation, float lightness) {
+				Hue = ClampValues(0.0f, hue, 1.0f);
+				Saturation = ClampValues(0.0f, saturation, 1.0f);
+				Lightness = ClampValues(0.0f, lightness, 1.0f);
+
+				PrintValues("HSL", Hue, Saturation, Lightness);
+			}
+		}
+
+		public class HEX {
+			public int[] IntHEX {get; set;}
+			public string StringHEX {get; set;}
+
+			public HEX(string stringHEX) {
+				stringHEX = stringHEX.ToUpper();
+				StringHEX = ClampValues(stringHEX);
+
+				IntHEX = StringHEXtoIntHEX(StringHEX);
+
+				PrintValues("StringHEX", StringHEX);
+				PrintValues("IntHEX", IntHEX);
 			}
 
-			return intArray;
+			private static int[] StringHEXtoIntHEX(string inputHEX) {
+				char[] charArray = inputHEX.ToCharArray();
+				int[] intArray = new int[6];
+
+				for (int i=0; i < charArray.Length; i++) { 
+					intArray[i] = System.Convert.ToInt32(charArray[i]);
+				}
+
+				return intArray;
+			}
 		}
 	}
 }
