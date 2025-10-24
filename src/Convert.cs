@@ -1,4 +1,4 @@
-namespace ChromaToast.Color {
+namespace ChromaToast.Chroma {
 
 	public class Convert {
 		static Convert() { }

@@ -1,9 +1,9 @@
 using System;
 
-namespace ChromaToast.Color {
+namespace ChromaToast.Chroma {
 
-	public class Color {
-		public Color() {}
+	public class Chroma {
+		public Chroma() {}
 
 		internal static float ClampValues(float floor, float input, float ceiling) {
 			float clampedValue = 0.0f;
