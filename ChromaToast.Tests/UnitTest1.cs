@@ -43,6 +43,20 @@ namespace ChromaToast.Tests {
 
 			Assert.Equal(expected, result);
 		}
+
+		[Fact]
+		public void GreenValue_AboveCeiling_ReturnsCeiling() {
+
+			float valueRed = 1.0f;
+			float valueGreen = 1.7f;
+			float valueBlue = 1.0f;
+			float expected = 1.0f;
+
+			var colorRGB = new ChromaToast.Chroma.Chroma.RGB(valueRed, valueGreen, valueBlue);
+			float result = colorRGB.Green;
+
+			Assert.Equal(expected, result);
+		}
 	}
 
 }
