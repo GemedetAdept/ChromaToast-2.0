@@ -35,7 +35,7 @@ namespace ChromaToast.Tests {
 
 			float valueRed = 1.0f;
 			float valueGreen = -0.7f;
-			float valueBlue = -1.0f;
+			float valueBlue = 1.0f;
 			float expected = 0.0f;
 
 			var colorRGB = new ChromaToast.Chroma.Chroma.RGB(valueRed, valueGreen, valueBlue);
@@ -54,6 +54,20 @@ namespace ChromaToast.Tests {
 
 			var colorRGB = new ChromaToast.Chroma.Chroma.RGB(valueRed, valueGreen, valueBlue);
 			float result = colorRGB.Green;
+
+			Assert.Equal(expected, result);
+		}
+
+		[Fact]
+		public void BlueValue_BelowFloor_ReturnsFloor() {
+
+			float valueRed = 1.0f;
+			float valueGreen = 1.0f;
+			float valueBlue = -0.7f;
+			float expected = 0.0f;
+
+			var colorRGB = new ChromaToast.Chroma.Chroma.RGB(valueRed, valueGreen, valueBlue);
+			float result = colorRGB.Blue;
 
 			Assert.Equal(expected, result);
 		}

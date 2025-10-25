@@ -26,8 +26,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -36,7 +40,7 @@
               "RelativeDocumentMoniker": "ChromaToast.Tests\\UnitTest1.cs",
               "ToolTip": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\ChromaToast.Tests\\UnitTest1.cs",
               "RelativeToolTip": "ChromaToast.Tests\\UnitTest1.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAmwCsAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAYwEYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-25T14:15:11.791Z",
               "EditorCaption": ""
@@ -73,7 +77,7 @@
               "RelativeDocumentMoniker": "src\\Chroma.cs",
               "ToolTip": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Chroma.cs",
               "RelativeToolTip": "src\\Chroma.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T00:08:17.915Z",
               "EditorCaption": ""
