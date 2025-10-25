@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|c:\\users\\vivia\\programming\\c#\\chromatoast\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|solutionrelative:src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|c:\\users\\vivia\\programming\\c#\\chromatoast\\src\\convert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|solutionrelative:src\\convert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|c:\\users\\vivia\\programming\\c#\\chromatoast\\src\\chroma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|solutionrelative:src\\chroma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8D15DCBD-694C-4069-BA45-5076A9DDAB2A}|ChromaToast.Tests\\ChromaToast.Tests.csproj|c:\\users\\vivia\\programming\\c#\\chromatoast\\chromatoast.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D15DCBD-694C-4069-BA45-5076A9DDAB2A}|ChromaToast.Tests\\ChromaToast.Tests.csproj|solutionrelative:chromatoast.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|c:\\users\\vivia\\programming\\c#\\chromatoast\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|solutionrelative:src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|c:\\users\\vivia\\programming\\c#\\chromatoast\\src\\convert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|solutionrelative:src\\convert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Convert.cs",
               "DocumentMoniker": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Convert.cs",
               "RelativeDocumentMoniker": "src\\Convert.cs",
@@ -43,7 +43,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Program.cs",
               "RelativeDocumentMoniker": "src\\Program.cs",
@@ -56,7 +56,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Chroma.cs",
               "DocumentMoniker": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Chroma.cs",
               "RelativeDocumentMoniker": "src\\Chroma.cs",
@@ -69,13 +69,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\ChromaToast.Tests\\UnitTest1.cs",
               "RelativeDocumentMoniker": "ChromaToast.Tests\\UnitTest1.cs",
               "ToolTip": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\ChromaToast.Tests\\UnitTest1.cs",
               "RelativeToolTip": "ChromaToast.Tests\\UnitTest1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T00:14:55.681Z",
               "EditorCaption": ""
