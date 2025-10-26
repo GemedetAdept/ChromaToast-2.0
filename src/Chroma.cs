@@ -52,15 +52,15 @@ namespace ChromaToast {
 		}
 
 		public static void PrintValues(string valueType, int[] values) {
-			string outputString = "";
+			string output = "";
 			
 			foreach(int intValue in values) {
 				string intString = System.Convert.ToString(intValue);
 
-				outputString += $"{intString} ";
+				output += $"{intString} ";
 			}
 
-			Console.WriteLine("{0} : {1}", valueType, outputString);
+			Console.WriteLine("{0} : {1}", valueType, output);
 		}
 
 		public class RGB {
@@ -80,14 +80,14 @@ namespace ChromaToast {
 		public class HSV {
 			public float Hue {get; set;}
 			public float Saturation {get; set;}
-			public float ValueHSV {get; set;}
+			public float Value {get; set;}
 
-			public HSV(float hue, float saturation, float valueHSV) {
+			public HSV(float hue, float saturation, float value) {
 				Hue = ClampValues(0.0f, hue, 1.0f);
 				Saturation = ClampValues(0.0f, saturation, 1.0f);
-				ValueHSV = ClampValues(0.0f, valueHSV, 1.0f);
+				Value = ClampValues(0.0f, value, 1.0f);
 
-				PrintValues("HSV", Hue, Saturation, ValueHSV);
+				PrintValues("HSV", Hue, Saturation, Value);
 			}
 		}
 
