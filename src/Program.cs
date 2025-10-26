@@ -11,19 +11,24 @@ void clamping() {
 
 // Conversion Testing
 void conversion() {
-	// RGB To
+	// RGB To...
 	Console.WriteLine("RGB To...");
 	Chroma.RGB newRGB = new Chroma.RGB(red: 0.505f, green: 0.827f, blue: 0.380f);
 	Chroma.HSV outHSV_0 = ChromaToast.Convert.RGB.ToHSV(newRGB);
 	Chroma.HSL outHSL_0 = ChromaToast.Convert.RGB.ToHSL(newRGB);
 	Chroma.HEX outHEX_0 = ChromaToast.Convert.RGB.ToHEX(newRGB);
 
-	// HSV To
+	// HSV To...
 	Console.WriteLine("\nHSV To...");
 	Chroma.HSV newHSV = new Chroma.HSV(hue: 0.286f, saturation: 0.540f, value: 0.827f);
 	Chroma.RGB outRGB_1 = ChromaToast.Convert.HSV.ToRGB(newHSV);
 	Chroma.HSL outHSL_1 = ChromaToast.Convert.HSV.ToHSL(newHSV);
 	Chroma.HEX outHEX_1 = ChromaToast.Convert.HSV.ToHEX(newHSV);
+
+	// HSL To...
+	Console.WriteLine("\nHSL To...");
+	Chroma.HSL newHSL = new Chroma.HSL(hue: 0.286f, saturation:0.563f, lightness:0.603f);
+	Chroma.RGB outRGB = ChromaToast.Convert.HSL.ToRGB(newHSL);
 }
 
 // Test Functions

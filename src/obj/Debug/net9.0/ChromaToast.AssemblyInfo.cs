@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChromaToast")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ea7be95503090e0551378acf99ed9bfb5265cd0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30006dbf341c1a7d2f345a586ab397b697ddc5dd")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChromaToast")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChromaToast")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

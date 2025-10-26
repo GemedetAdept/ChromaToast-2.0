@@ -103,7 +103,8 @@ namespace ChromaToast {
 
 			// ("HSV and HSL," 2025) & (Travis, 1991, pg. 211)
 			public static Chroma.RGB ToRGB(Chroma.HSV input) {
-				float huePrime = (input.Hue*360)/60;
+				float hue = input.Hue;
+				float huePrime = (hue*360)/60;
 				float saturation = input.Saturation;
 				float value = input.Value;
 
@@ -157,6 +158,36 @@ namespace ChromaToast {
 
 		public class HSL {
 			static HSL() { }
+
+			// ("HSV and HSL," 2025)
+			public static Chroma.RGB ToRGB(Chroma.HSL input) {
+				float hue = input.Hue;
+				float huePrime = hue*360/60;
+				float saturation = input.Saturation;
+				float lightness = input.Lightness;
+
+				float chroma = (1 - Math.Abs((2*lightness)-1))*saturation;
+				float median = chroma*(1 - Math.Abs((huePrime % 2)-1));
+
+				float redPrime = 0.0f;
+				float greenPrime = 0.0f;
+				float bluePrime = 0.0f;
+
+				if (0 <= huePrime && huePrime < 1) { redPrime=chroma; greenPrime=median; bluePrime=0; }
+				else if (1 <= huePrime && huePrime < 2) { redPrime=median; greenPrime=chroma; bluePrime=0; }
+				else if (2 <= huePrime && huePrime < 3) { redPrime=0; greenPrime=chroma; bluePrime=median; }
+				else if (3 <= huePrime && huePrime < 4) { redPrime=0; greenPrime=median; bluePrime=chroma; }
+				else if (4 <= huePrime && huePrime < 5) { redPrime=median; greenPrime=0; bluePrime=chroma; }
+				else if (5 <= huePrime && huePrime < 6) { redPrime=chroma; greenPrime=0; bluePrime=median; }
+
+				float mid = lightness - (chroma/2);
+				float red = redPrime + mid;
+				float green = greenPrime + mid;
+				float blue = bluePrime +mid;
+
+				Chroma.RGB output = new Chroma.RGB(red, green, blue);
+				return output;
+			}
 		}
 
 		public class HEX {
