@@ -15,6 +15,7 @@ void conversion() {
 
 	Chroma.HSV outHSV = ChromaToast.Convert.RGB.ToHSV(newRGB);
 	Chroma.HSL outHSL = ChromaToast.Convert.RGB.ToHSL(newRGB);
+	Chroma.HEX outHEX = ChromaToast.Convert.RGB.ToHEX(newRGB);
 }
 
 // Test Functions

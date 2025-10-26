@@ -78,6 +78,22 @@ namespace ChromaToast {
 				Chroma.HSL output = new Chroma.HSL(hue, saturation, lightness);
 				return output;
 			}
+
+			public static Chroma.HEX ToHEX(Chroma.RGB input) {
+				int red = (int)Math.Ceiling(input.Red*255);
+				int green = (int)Math.Ceiling(input.Green*255);
+				int blue = (int)Math.Ceiling(input.Blue*255);
+
+				string[] components = new string[3];
+				components[0] = red.ToString("X");
+				components[1] = green.ToString("X");
+				components[2] = blue.ToString("X");
+
+				string output = String.Join("", components);
+				Chroma.HEX outputPrime = new Chroma.HEX(output);
+
+				return outputPrime;
+			}
 		}
 
 		public class HSV {
