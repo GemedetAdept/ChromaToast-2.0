@@ -2,11 +2,11 @@ namespace ChromaToast {
 
 	public class Convert {
 		/* Conversion equations referenced from:
-		 * Ford, A. and Roberts, A. (1998) Color Space Conversions
+		 * Ford, A. & Roberts, A. (1998) Color Space Conversions
 		 * Travis, D. (1991) Effective Color Displays: Theory and Practice
 		 *		(Computers and People). Academic Press. DOI 10.1016/0003-6870(92)90258-W
-		 * Wikipedia - HSV and HSL
-		 *		(https://web.archive.org/web/20251012000154/https://en.wikipedia.org/wiki/HSL_and_HSV)
+		 * HSL and HSV. (2025, October 09). In Wikipedia.
+		 *		(https://en.wikipedia.org/w/index.php?title=HSL_and_HSV&oldid=1315916974)
 		 * The Python Standard Library, colorsys.py
 		*/
 		static Convert() { }
@@ -14,6 +14,7 @@ namespace ChromaToast {
 		public class RGB {
 			static RGB() { }
 
+			// (Ford & Roberts, 1998, pg. 15) & (Travis, 1991, pg. 211)
 			public static Chroma.HSV ToHSV(Chroma.RGB input) {
 				float red = input.Red;
 				float green = input.Green;
@@ -45,6 +46,7 @@ namespace ChromaToast {
 				return output;
 			}
 
+			// ("HSV and HSL," 2025) & (Travis, 1991, pg. 211)
 			public static Chroma.HSL ToHSL(Chroma.RGB input) {
 				float red = input.Red;
 				float green = input.Green;
@@ -98,6 +100,11 @@ namespace ChromaToast {
 
 		public class HSV {
 			static HSV() { }
+
+			// ("HSV and HSL," 2025) & (Travis, 1991, pg. 211)
+			public static Chroma.RGB ToRGB(Chroma.HSV input) {
+					
+			}
 		}
 
 		public class HSL {
