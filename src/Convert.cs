@@ -128,6 +128,22 @@ namespace ChromaToast {
 				Chroma.RGB output = new Chroma.RGB(redPrime, greenPrime, bluePrime);
 				return output;
 			}
+
+			// ("HSV and HSL," 2025)
+			public static Chroma.HSL ToHSL(Chroma.HSV input) {
+				float hue = input.Hue;
+				float saturation = input.Saturation;
+				float value = input.Value;
+
+				float huePrime = hue;
+				float lightness = value*(1-(saturation/2));
+
+				float saturationPrime = 0.0f;
+				if (lightness==0 || lightness==1) { saturationPrime = 0; }
+				else { saturationPrime = (value-lightness)/(Math.Min(lightness, 1-lightness)); }
+
+				Chroma.HSL output = new Chroma.HSL(huePrime, saturationPrime, lightness);
+				return output;
 			}
 		}
 
@@ -138,4 +154,5 @@ namespace ChromaToast {
 		public class HEX {
 			static HEX() { }
 		}
+	}
 }
