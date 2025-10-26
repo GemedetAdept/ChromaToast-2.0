@@ -145,6 +145,14 @@ namespace ChromaToast {
 				Chroma.HSL output = new Chroma.HSL(huePrime, saturationPrime, lightness);
 				return output;
 			}
+
+			public static Chroma.HEX ToHEX(Chroma.HSV input) {
+				Chroma.RGB step = ToRGB(input);
+
+				Chroma.HEX output = ChromaToast.Convert.RGB.ToHEX(step);
+
+				return output;
+			}
 		}
 
 		public class HSL {
