@@ -15,22 +15,22 @@ namespace ChromaToast.Chroma {
 			return clampedValue;
 		}
 
-		internal static string ClampValues(string inputHEX) {
+		internal static string ClampValues(string hexString) {
 			string clampedHEX;
 			char[] clampedCharArray = new char[6];
-			char[] inputCharArray = inputHEX.ToCharArray();
+			char[] inputCharArray = hexString.ToCharArray();
 			int[] inputIntArray = new int[6];
 
 			for (int i=0; i < inputCharArray.Length; i++) {
 				inputIntArray[i] = System.Convert.ToInt32(inputCharArray[i]);
 			}
 
-			int floorHEX = System.Convert.ToInt32('0');
-			int ceilingHEX = System.Convert.ToInt32('F');
+			int hexFloor = System.Convert.ToInt32('0');
+			int hexCeiling = System.Convert.ToInt32('F');
 
 			for (int i=0; i < inputIntArray.Length; i++) { 
-				if (inputIntArray[i] < floorHEX) { inputIntArray[i] = floorHEX; }
-				if (inputIntArray[i] > ceilingHEX) { inputIntArray[i] = ceilingHEX;}
+				if (inputIntArray[i] < hexFloor) { inputIntArray[i] = hexFloor; }
+				if (inputIntArray[i] > hexCeiling) { inputIntArray[i] = hexCeiling;}
 			}
 
 			for (int i=0; i < inputIntArray.Length; i++) {
@@ -106,21 +106,21 @@ namespace ChromaToast.Chroma {
 		}
 
 		public class HEX {
-			public int[] IntHEX {get; set;}
-			public string StringHEX {get; set;}
+			public int[] HexInt {get; set;}
+			public string HexString {get; set;}
 
-			public HEX(string stringHEX) {
-				stringHEX = stringHEX.ToUpper();
-				StringHEX = ClampValues(stringHEX);
+			public HEX(string hexString) {
+				hexString = hexString.ToUpper();
+				HexString = ClampValues(hexString);
 
-				IntHEX = StringHEXtoIntHEX(StringHEX);
+				HexInt = HexStringtoHexInt(HexString);
 
-				PrintValues("StringHEX", StringHEX);
-				PrintValues("IntHEX", IntHEX);
+				PrintValues("HexString", HexString);
+				PrintValues("HexInt", HexInt);
 			}
 
-			private static int[] StringHEXtoIntHEX(string inputHEX) {
-				char[] charArray = inputHEX.ToCharArray();
+			private static int[] HexStringtoHexInt(string hexString) {
+				char[] charArray = hexString.ToCharArray();
 				int[] intArray = new int[6];
 
 				for (int i=0; i < charArray.Length; i++) { 
