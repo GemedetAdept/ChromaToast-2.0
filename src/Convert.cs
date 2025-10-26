@@ -150,7 +150,7 @@ namespace ChromaToast {
 			public static Chroma.HEX ToHEX(Chroma.HSV input) {
 				Chroma.RGB step = ToRGB(input);
 
-				Chroma.HEX output = ChromaToast.Convert.RGB.ToHEX(step);
+				Chroma.HEX output = Convert.RGB.ToHEX(step);
 
 				return output;
 			}
@@ -189,7 +189,7 @@ namespace ChromaToast {
 				return output;
 			}
 
-			public static Chroma.HSV ToHSV (Chroma.HSL input) {
+			public static Chroma.HSV ToHSV(Chroma.HSL input) {
 				float hue = input.Hue;
 				float saturation = input.Saturation;
 				float lightness = input.Lightness;
@@ -202,6 +202,14 @@ namespace ChromaToast {
 				else { saturationPrime = 2 * (1-(lightness/value)); }
 
 				Chroma.HSV output = new Chroma.HSV(huePrime, saturationPrime, value);
+				return output;
+			}
+
+			public static Chroma.HEX ToHEX(Chroma.HSL input) {
+				Chroma.RGB step = HSL.ToRGB(input);
+
+				Chroma.HEX output = RGB.ToHEX(step);
+
 				return output;
 			}
 		}

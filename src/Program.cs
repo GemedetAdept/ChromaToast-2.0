@@ -30,6 +30,7 @@ void conversion() {
 	Chroma.HSL newHSL = new Chroma.HSL(hue: 0.286f, saturation:0.563f, lightness:0.603f);
 	Chroma.RGB outRGB_2 = ChromaToast.Convert.HSL.ToRGB(newHSL);
 	Chroma.HSV outHSV_2 = ChromaToast.Convert.HSL.ToHSV(newHSL);
+	Chroma.HEX outHEX_2 = ChromaToast.Convert.HSL.ToHEX(newHSL);
 }
 
 // Test Functions
