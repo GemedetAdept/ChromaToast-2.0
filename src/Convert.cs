@@ -162,7 +162,7 @@ namespace ChromaToast {
 			// ("HSV and HSL," 2025)
 			public static Chroma.RGB ToRGB(Chroma.HSL input) {
 				float hue = input.Hue;
-				float huePrime = hue*360/60;
+				float huePrime = (hue*360)/60;
 				float saturation = input.Saturation;
 				float lightness = input.Lightness;
 
@@ -186,6 +186,22 @@ namespace ChromaToast {
 				float blue = bluePrime +mid;
 
 				Chroma.RGB output = new Chroma.RGB(red, green, blue);
+				return output;
+			}
+
+			public static Chroma.HSV ToHSV (Chroma.HSL input) {
+				float hue = input.Hue;
+				float saturation = input.Saturation;
+				float lightness = input.Lightness;
+
+				float huePrime = hue;
+				float value = lightness + saturation*Math.Min(lightness, 1-lightness);
+
+				float saturationPrime = 0.0f;
+				if (value==0) { saturationPrime = 0; }
+				else { saturationPrime = 2 * (1-(lightness/value)); }
+
+				Chroma.HSV output = new Chroma.HSV(huePrime, saturationPrime, value);
 				return output;
 			}
 		}
