@@ -1,4 +1,4 @@
-namespace ChromaToast.Chroma {
+namespace ChromaToast {
 
 	public class Convert {
 		/* Conversion equations referenced from:
@@ -14,7 +14,7 @@ namespace ChromaToast.Chroma {
 		public class RGB {
 			static RGB() { }
 
-			public Chroma.HSV ToHSV(Chroma.RGB input) {
+			public static Chroma.HSV ToHSV(Chroma.RGB input) {
 				float red = input.Red;
 				float green = input.Green;
 				float blue = input.Blue;

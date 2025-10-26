@@ -1,6 +1,6 @@
 using System;
 
-namespace ChromaToast.Chroma {
+namespace ChromaToast {
 
 	public class Chroma {
 		public Chroma() {}
