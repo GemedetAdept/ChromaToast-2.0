@@ -39,7 +39,7 @@ namespace ChromaToast {
 				else if (red == max) { huePrime = 3+greenPrime; }
 				else { huePrime = 5-redPrime; }
 
-				float hue = huePrime * 60.0f;
+				float hue = (huePrime * 60)/360;
 
 				Chroma.HSV output = new Chroma.HSV(hue, saturation, value);
 				return output;
