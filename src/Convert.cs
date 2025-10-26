@@ -44,6 +44,40 @@ namespace ChromaToast {
 				Chroma.HSV output = new Chroma.HSV(hue, saturation, value);
 				return output;
 			}
+
+			public static Chroma.HSL ToHSL(Chroma.RGB input) {
+				float red = input.Red;
+				float green = input.Green;
+				float blue = input.Blue;
+
+				float max = Math.Max(red, Math.Max(green, blue));
+				float min = Math.Min(red, Math.Min(green, blue));
+
+				float chroma = (max-min);
+				float lightness = (max+min)/2;
+
+				float redPrime = (max-red)/chroma;
+				float greenPrime = (max-green)/chroma;
+				float bluePrime = (max-blue)/chroma;
+
+				float huePrime;
+				if (chroma==0) { huePrime=0; }
+				else if (red==max&&green==min) { huePrime=5+bluePrime; }
+				else if (red==max&&green!=min) { huePrime=1-greenPrime; }
+				else if (green==max&&blue==min) { huePrime=redPrime+1; }
+				else if (green==max&&blue!=min) { huePrime=3-bluePrime; }
+				else if (red==max) { huePrime=3+greenPrime; }
+				else { huePrime=5-redPrime; }
+
+				float hue = (huePrime*60)/360;
+
+				float saturation;
+				if (lightness == 0 || lightness == 1) { saturation = 0; }
+				else { saturation = (max-lightness)/Math.Min(lightness, 1-lightness); }
+
+				Chroma.HSL output = new Chroma.HSL(hue, saturation, lightness);
+				return output;
+			}
 		}
 
 		public class HSV {

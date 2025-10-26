@@ -12,7 +12,9 @@ void clamping() {
 // Conversion Testing
 void conversion() {
 	Chroma.RGB newRGB = new Chroma.RGB(red: 0.505f, green: 0.827f, blue: 0.380f);
+
 	Chroma.HSV outHSV = ChromaToast.Convert.RGB.ToHSV(newRGB);
+	Chroma.HSL outHSL = ChromaToast.Convert.RGB.ToHSL(newRGB);
 }
 
 // Test Functions
