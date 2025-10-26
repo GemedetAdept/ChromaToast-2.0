@@ -103,7 +103,31 @@ namespace ChromaToast {
 
 			// ("HSV and HSL," 2025) & (Travis, 1991, pg. 211)
 			public static Chroma.RGB ToRGB(Chroma.HSV input) {
-					
+				float huePrime = (input.Hue*360)/60;
+				float saturation = input.Saturation;
+				float value = input.Value;
+
+				int primaryColor = (int)Math.Floor(huePrime);
+				float secondaryColor = huePrime - primaryColor;
+
+				float partA = (1-saturation)*input.Value;
+				float partB = (1-(saturation * secondaryColor))*value;
+				float partC = (1-(saturation * (1-secondaryColor)))*value;
+
+				float redPrime = 0.0f;
+				float greenPrime = 0.0f;
+				float bluePrime = 0.0f;
+
+				if (primaryColor==0) { redPrime=value; greenPrime=partC; bluePrime=partA; }
+				else if (primaryColor==1) { redPrime=partB; greenPrime=value; bluePrime=partA; }
+				else if (primaryColor==2) { redPrime=partA; greenPrime=value; bluePrime=partC; }
+				else if (primaryColor==3) { redPrime=partA; greenPrime=partB; bluePrime=value; }
+				else if (primaryColor==4) { redPrime=partC; greenPrime=partA; bluePrime=value; }
+				else if (primaryColor==5) { redPrime=value; greenPrime=partA; bluePrime=partB; }
+
+				Chroma.RGB output = new Chroma.RGB(redPrime, greenPrime, bluePrime);
+				return output;
+			}
 			}
 		}
 
@@ -114,5 +138,4 @@ namespace ChromaToast {
 		public class HEX {
 			static HEX() { }
 		}
-	}
 }
