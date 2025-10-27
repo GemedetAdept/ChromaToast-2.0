@@ -84,6 +84,14 @@
 
 				Console.WriteLine("{0} : {1}°, {2}%, {3}%", label, hue, saturation, lightness);
 			}
+
+			public static void PrintDisplay(Chroma.HEX input) {
+				string value = input.Value;
+
+				string label = "Chroma.HEX (Display)";
+
+				Console.WriteLine("{0} : #{1}", label, value);
+			}
 		}
 	}
 }

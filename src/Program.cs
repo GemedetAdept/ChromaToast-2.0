@@ -56,6 +56,7 @@ void display() {
 	CLI.Display.PrintDisplay(newRGB);
 	CLI.Display.PrintDisplay(newHSV);
 	CLI.Display.PrintDisplay(newHSL);
+	CLI.Display.PrintDisplay(newHEX);
 }
 
 // Test Functions
