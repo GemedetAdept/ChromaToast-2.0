@@ -18,6 +18,19 @@
 
 				Console.WriteLine("\n{0} : {1}, {2}, {3}", label, redPrime, greenPrime, bluePrime);
 			}
+
+			public static void PrintNormalized(Chroma.HSV input) {
+				float hue = input.Hue;
+				float saturation = input.Saturation;
+				float value = input.Value;
+
+				string label = "Chroma.HSV (Normalized)";
+				string huePrime = hue.ToString("F3");
+				string saturationPrime = saturation.ToString("F3");
+				string valuePrime = value.ToString("F3");
+
+				Console.WriteLine("\n{0} : {1}, {2}, {3}", label, huePrime, saturationPrime, valuePrime);
+			}
 		}
 	}
 }

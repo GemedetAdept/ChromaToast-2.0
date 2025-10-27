@@ -47,6 +47,7 @@ void display() {
 	Chroma.HEX newHEX = new Chroma.HEX(value: "81D361");
 
 	CLI.Display.PrintNormalized(newRGB);
+	CLI.Display.PrintNormalized(newHSV);
 }
 
 // Test Functions
