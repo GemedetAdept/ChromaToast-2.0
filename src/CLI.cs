@@ -64,6 +64,16 @@
 
 				Console.WriteLine("{0} : {1}, {2}, {3}", label, red, green, blue);
 			}
+
+			public static void PrintDisplay(Chroma.HSV input) {
+				int hue = (int)Math.Ceiling(input.Hue*360);
+				int saturation = (int)Math.Floor(input.Saturation*100);
+				int value = (int)Math.Floor(input.Value*100);
+
+				string label = "Chroma.HSV (Display)";
+
+				Console.WriteLine("{0} : {1}°, {2}%, {3}%", label, hue, saturation, value);
+			}
 		}
 	}
 }

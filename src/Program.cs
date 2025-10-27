@@ -54,6 +54,7 @@ void display() {
 
 	Console.WriteLine("\nDisplay:");
 	CLI.Display.PrintDisplay(newRGB);
+	CLI.Display.PrintDisplay(newHSV);
 }
 
 // Test Functions
