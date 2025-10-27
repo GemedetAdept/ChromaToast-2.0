@@ -50,6 +50,7 @@ void display() {
 	CLI.Display.PrintNormalized(newRGB);
 	CLI.Display.PrintNormalized(newHSV);
 	CLI.Display.PrintNormalized(newHSL);
+	CLI.Display.PrintNormalized(newHEX);
 }
 
 // Test Functions
