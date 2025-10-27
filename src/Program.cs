@@ -46,8 +46,10 @@ void display() {
 	Chroma.HSL newHSL = new Chroma.HSL(hue: 0.286f, saturation: 0.563f, lightness: 0.603f);
 	Chroma.HEX newHEX = new Chroma.HEX(value: "81D361");
 
+	Console.WriteLine("Normalized:");
 	CLI.Display.PrintNormalized(newRGB);
 	CLI.Display.PrintNormalized(newHSV);
+	CLI.Display.PrintNormalized(newHSL);
 }
 
 // Test Functions

@@ -16,7 +16,7 @@
 				string greenPrime = green.ToString("F3");
 				string bluePrime = blue.ToString("F3");
 
-				Console.WriteLine("\n{0} : {1}, {2}, {3}", label, redPrime, greenPrime, bluePrime);
+				Console.WriteLine("{0} : {1}, {2}, {3}", label, redPrime, greenPrime, bluePrime);
 			}
 
 			public static void PrintNormalized(Chroma.HSV input) {
@@ -29,7 +29,20 @@
 				string saturationPrime = saturation.ToString("F3");
 				string valuePrime = value.ToString("F3");
 
-				Console.WriteLine("\n{0} : {1}, {2}, {3}", label, huePrime, saturationPrime, valuePrime);
+				Console.WriteLine("{0} : {1}, {2}, {3}", label, huePrime, saturationPrime, valuePrime);
+			}
+
+			public static void PrintNormalized(Chroma.HSL input) {
+				float hue = input.Hue;
+				float saturation = input.Saturation;
+				float lightness = input.Lightness;
+
+				string label = "Chroma.HSV (Normalized)";
+				string huePrime = hue.ToString("F3");
+				string saturationPrime = saturation.ToString("F3");
+				string lightnessPrime = lightness.ToString("F3");
+
+				Console.WriteLine("{0} : {1}, {2}, {3}", label, huePrime, saturationPrime, lightnessPrime);
 			}
 		}
 	}
