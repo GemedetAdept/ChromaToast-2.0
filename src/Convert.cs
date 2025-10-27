@@ -216,6 +216,37 @@ namespace ChromaToast {
 
 		public class HEX {
 			static HEX() { }
+
+			public static Chroma.RGB ToRGB(Chroma.HEX input) {
+				string hexString = input.HexString;
+				char[] charArray = hexString.ToCharArray();
+				string[] splitHex = new string[3];
+
+				int splitIter = 0;
+				for (int i = 0; i < charArray.Length; i+=2) {
+					char[] chars = { charArray[i], charArray[i+1] };
+					string part = new string(chars);
+
+					splitHex[splitIter] = part;
+					splitIter++;
+				}
+
+				float[] colorValues = new float[3];
+				for (int i = 0; i < splitHex.Length; i++) {
+					int step = System.Convert.ToInt32(splitHex[i], 16);
+
+					float part = step/255.0f;
+
+					colorValues[i] = part;
+				}
+
+				float red = colorValues[0];
+				float green = colorValues[1];
+				float blue = colorValues[2];
+
+				Chroma.RGB output = new Chroma.RGB(red, green, blue);
+				return output;
+			}
 		}
 	}
 }
