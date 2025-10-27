@@ -255,6 +255,14 @@ namespace ChromaToast {
 
 				return output;
 			}
+
+			public static Chroma.HSL ToHSL(Chroma.HEX input) {
+				Chroma.RGB step = HEX.ToRGB(input);
+				
+				Chroma.HSL output = RGB.ToHSL(step);
+
+				return output;
+			}
 		}
 	}
 }

@@ -37,6 +37,7 @@ void conversion() {
 	Chroma.HEX newHEX = new Chroma.HEX("81D361");
 	Chroma.RGB outRGB_3 = ChromaToast.Convert.HEX.ToRGB(newHEX);
 	Chroma.HSV outHSV_3 = ChromaToast.Convert.HEX.ToHSV(newHEX);
+	Chroma.HSL outHSL_3 = ChromaToast.Convert.HEX.ToHSL(newHEX);
 }
 
 // Test Functions
