@@ -74,6 +74,16 @@
 
 				Console.WriteLine("{0} : {1}°, {2}%, {3}%", label, hue, saturation, value);
 			}
+
+			public static void PrintDisplay(Chroma.HSL input) {
+				int hue = (int)Math.Ceiling(input.Hue*360);
+				int saturation = (int)Math.Floor(input.Saturation*100);
+				int lightness = (int)Math.Floor(input.Lightness*100);
+
+				string label = "Chroma.HSL (Display)";
+
+				Console.WriteLine("{0} : {1}°, {2}%, {3}%", label, hue, saturation, lightness);
+			}
 		}
 	}
 }
