@@ -12,7 +12,6 @@ namespace ChromaToast {
 		static Convert() { }
 
 		public class RGB {
-			static RGB() { }
 
 			// (Ford & Roberts, 1998, pg. 15) & (Travis, 1991, pg. 211)
 			public static Chroma.HSV ToHSV(Chroma.RGB input) {
@@ -99,7 +98,6 @@ namespace ChromaToast {
 		}
 
 		public class HSV {
-			static HSV() { }
 
 			// ("HSV and HSL," 2025) & (Travis, 1991, pg. 211)
 			public static Chroma.RGB ToRGB(Chroma.HSV input) {
@@ -157,7 +155,6 @@ namespace ChromaToast {
 		}
 
 		public class HSL {
-			static HSL() { }
 
 			// ("HSV and HSL," 2025)
 			public static Chroma.RGB ToRGB(Chroma.HSL input) {
@@ -215,7 +212,6 @@ namespace ChromaToast {
 		}
 
 		public class HEX {
-			static HEX() { }
 
 			public static Chroma.RGB ToRGB(Chroma.HEX input) {
 				string value = input.Value;

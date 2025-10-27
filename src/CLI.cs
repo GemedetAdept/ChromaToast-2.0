@@ -4,7 +4,6 @@
 		static CLI() { }
 
 		public class Display() {
-			static Display() { }
 
 			public static void PrintNormalized(Chroma.RGB input) {
 				float red = input.Red;
