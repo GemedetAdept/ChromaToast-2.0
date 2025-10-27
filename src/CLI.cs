@@ -5,6 +5,7 @@
 
 		public class Display() {
 
+			// PrintNormalized (decimal/unit values)
 			public static void PrintNormalized(Chroma.RGB input) {
 				float red = input.Red;
 				float green = input.Green;
@@ -51,6 +52,17 @@
 
 				Console.WriteLine("{0} : {1} {2} {3} {4} {5} {6}", label,
 					integers[0], integers[1], integers[2], integers[3], integers[4], integers[5]);
+			}
+
+			// PrintDisplay (conventional values for color spaces i.e., 255 for RGB instead of 1.0)
+			public static void PrintDisplay(Chroma.RGB input) {
+				int red = (int)Math.Ceiling(input.Red*255);
+				int green = (int)Math.Ceiling(input.Green*255);
+				int blue = (int)Math.Ceiling(input.Blue*255);
+
+				string label = "Chroma.RGB (Display)";
+
+				Console.WriteLine("{0} : {1}, {2}, {3}", label, red, green, blue);
 			}
 		}
 	}
