@@ -218,8 +218,8 @@ namespace ChromaToast {
 			static HEX() { }
 
 			public static Chroma.RGB ToRGB(Chroma.HEX input) {
-				string hexString = input.HexString;
-				char[] charArray = hexString.ToCharArray();
+				string value = input.Value;
+				char[] charArray = value.ToCharArray();
 				string[] splitHex = new string[3];
 
 				int splitIter = 0;

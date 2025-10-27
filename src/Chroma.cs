@@ -15,10 +15,10 @@ namespace ChromaToast {
 			return clampedValue;
 		}
 
-		internal static string ClampValues(string hexString) {
+		internal static string ClampValues(string value) {
 			string clampedHEX;
 			char[] clampedCharArray = new char[6];
-			char[] inputCharArray = hexString.ToCharArray();
+			char[] inputCharArray = value.ToCharArray();
 			int[] inputIntArray = new int[6];
 
 			for (int i=0; i < inputCharArray.Length; i++) {
@@ -72,8 +72,6 @@ namespace ChromaToast {
 				Red = ClampValues(0.0f, red, 1.0f);
 				Green = ClampValues(0.0f, green, 1.0f);
 				Blue = ClampValues(0.0f, blue, 1.0f);
-
-				PrintValues("RGB", Red, Green, Blue);
 			}
 		}
 
@@ -86,8 +84,6 @@ namespace ChromaToast {
 				Hue = ClampValues(0.0f, hue, 1.0f);
 				Saturation = ClampValues(0.0f, saturation, 1.0f);
 				Value = ClampValues(0.0f, value, 1.0f);
-
-				PrintValues("HSV", Hue, Saturation, Value);
 			}
 		}
 
@@ -100,27 +96,22 @@ namespace ChromaToast {
 				Hue = ClampValues(0.0f, hue, 1.0f);
 				Saturation = ClampValues(0.0f, saturation, 1.0f);
 				Lightness = ClampValues(0.0f, lightness, 1.0f);
-
-				PrintValues("HSL", Hue, Saturation, Lightness);
 			}
 		}
 
 		public class HEX {
-			public int[] HexInt {get; set;}
-			public string HexString {get; set;}
+			public int[] Integers {get; set;}
+			public string Value {get; set;}
 
-			public HEX(string hexString) {
-				hexString = hexString.ToUpper();
-				HexString = ClampValues(hexString);
+			public HEX(string value) {
+				value = value.ToUpper();
+				Value = ClampValues(value);
 
-				HexInt = HexStringtoHexInt(HexString);
-
-				PrintValues("HexString", HexString);
-				PrintValues("HexInt", HexInt);
+				Integers = ValuetoIntegers(Value);
 			}
 
-			private static int[] HexStringtoHexInt(string hexString) {
-				char[] charArray = hexString.ToCharArray();
+			private static int[] ValuetoIntegers(string value) {
+				char[] charArray = value.ToCharArray();
 				int[] intArray = new int[6];
 
 				for (int i=0; i < charArray.Length; i++) { 

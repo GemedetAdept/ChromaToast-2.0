@@ -40,6 +40,16 @@ void conversion() {
 	Chroma.HSL outHSL_3 = ChromaToast.Convert.HEX.ToHSL(newHEX);
 }
 
+void display() {
+	Chroma.RGB newRGB = new Chroma.RGB(red: 0.505f, green: 0.827f, blue: 0.380f);
+	Chroma.HSV newHSV = new Chroma.HSV(hue: 0.286f, saturation: 0.540f, value: 0.827f);
+	Chroma.HSL newHSL = new Chroma.HSL(hue: 0.286f, saturation: 0.563f, lightness: 0.603f);
+	Chroma.HEX newHEX = new Chroma.HEX(value: "81D361");
+
+	CLI.Display.PrintNormalized(newRGB);
+}
+
 // Test Functions
 //clamping();
-conversion();
+//conversion();
+display();
