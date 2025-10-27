@@ -247,6 +247,14 @@ namespace ChromaToast {
 				Chroma.RGB output = new Chroma.RGB(red, green, blue);
 				return output;
 			}
+
+			public static Chroma.HSV ToHSV(Chroma.HEX input) {
+				Chroma.RGB step = HEX.ToRGB(input);
+
+				Chroma.HSV output = RGB.ToHSV(step);
+
+				return output;
+			}
 		}
 	}
 }
