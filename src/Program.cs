@@ -60,10 +60,19 @@ void display() {
 }
 
 void generate() {
-	Chroma.RGB newRGB = Generate.Random.RGB();	
+	Console.WriteLine("Generate.Random");
+
+	Chroma.RGB newRGB = Generate.Random.RGB();
+	CLI.Display.PrintNormalized(newRGB);
+	CLI.Display.PrintDisplay(newRGB);
+
+	Chroma.HSV newHSV = Generate.Random.HSV();
+	CLI.Display.PrintNormalized(newHSV);
+	CLI.Display.PrintDisplay(newHSV);
 }
 
 // Test Functions
 //clamping();
 //conversion();
 //display();
+generate();

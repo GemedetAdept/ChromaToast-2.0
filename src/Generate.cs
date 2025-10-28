@@ -14,7 +14,7 @@
 
 				float[] valuesRGB = new float[3];
 				for (int i = 0;i < valuesRGB.Length; i++) {
-					float value = (float)(values[i]/255.0);
+					float value = (float)(values[i]/255.0f);
 					
 					valuesRGB[i] = value;
 				}
@@ -25,7 +25,22 @@
 
 				Chroma.RGB output = new Chroma.RGB(red, green, blue);
 				return output;
-			}	
+			}
+
+			public static Chroma.HSV HSV() {
+				System.Random random = new System.Random();
+
+				int hue = random.Next(0, 361);
+				int saturation = random.Next(0, 101);
+				int value = random.Next(0, 101);
+
+				float huePrime = (float)(hue/360.0f);
+				float saturationPrime = (float)(saturation/100.0f);
+				float valuePrime = (float)(value/100.0f);
+
+				Chroma.HSV output = new Chroma.HSV(huePrime, saturationPrime, valuePrime);
+				return output;
+			}
 		}
 	}
 }
