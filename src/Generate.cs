@@ -2,7 +2,7 @@
 	public class Generate {
 		
 		public class Random {
-			public Chroma.RGB RGB() {
+			public static Chroma.RGB RGB() {
 				int[] values = new int[3];
 
 				System.Random random = new System.Random();

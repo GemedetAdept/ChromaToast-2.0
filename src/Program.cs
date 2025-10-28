@@ -59,7 +59,11 @@ void display() {
 	CLI.Display.PrintDisplay(newHEX);
 }
 
+void generate() {
+	Chroma.RGB newRGB = Generate.Random.RGB();	
+}
+
 // Test Functions
 //clamping();
 //conversion();
-display();
+//display();
