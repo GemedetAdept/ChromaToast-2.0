@@ -73,6 +73,10 @@ void generate() {
 	Chroma.HSL newHSL = Generate.Random.HSL();
 	CLI.Display.PrintNormalized(newHSL);
 	CLI.Display.PrintDisplay(newHSL);
+
+	Chroma.HEX newHEX = Generate.Random.HEX();
+	CLI.Display.PrintNormalized(newHEX);
+	CLI.Display.PrintDisplay(newHEX);
 }
 
 // Test Functions

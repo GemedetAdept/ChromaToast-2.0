@@ -3,16 +3,16 @@
 		
 		public class Random {
 			public static Chroma.RGB RGB() {
-				int[] values = new int[3];
-
 				System.Random random = new System.Random();
+
+				int[] values = new int[3];
 				for (int i = 0; i < values.Length; i++) {
 					int value = random.Next(0, 256);
 
 					values[i] = value;
 				}
 
-				float[] valuesRGB = new float[3];
+				float[] valuesRGB = new float[values.Length];
 				for (int i = 0;i < valuesRGB.Length; i++) {
 					float value = (float)(values[i]/255.0f);
 					
@@ -54,6 +54,28 @@
 				float lightnessPrime = (float)(lightness/100.0f);
 
 				Chroma.HSL output = new Chroma.HSL(huePrime, saturationPrime, lightnessPrime);
+				return output;
+			}
+
+			public static Chroma.HEX HEX() {
+				System.Random random = new System.Random();
+
+				int[] values = new int[3];
+				for (int i = 0; i < values.Length; i++) {
+					int value = random.Next(0, 256);
+
+					values[i] = value;
+				}
+
+				string[] valuesHEX = new string[values.Length];
+				for (int i = 0; i < valuesHEX.Length; i++) {
+					string value = values[i].ToString("X");
+
+					valuesHEX[i] = value;
+				}
+
+				string joinedString = String.Join("", valuesHEX);
+				Chroma.HEX output = new Chroma.HEX(joinedString);
 				return output;
 			}
 		}
