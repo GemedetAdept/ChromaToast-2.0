@@ -11,5 +11,12 @@
 			HSL = new Chroma.HSL(0.0f, 0.0f, 0.0f);
 			HEX = new Chroma.HEX("000000");
 		}
+
+		public void InputAll(Chroma.RGB rgb, Chroma.HSV hsv, Chroma.HSL hsl, Chroma.HEX hex) {
+			RGB = rgb;
+			HSV = hsv;
+			HSL = hsl;
+			HEX = hex;
+		}
 	}
 }
