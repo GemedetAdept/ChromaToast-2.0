@@ -103,6 +103,6 @@ void card() {
 // Test Functions
 //clamping();
 //conversion();
-//display();
+display();
 //generate();
-card();
+//card();

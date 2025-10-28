@@ -40,28 +40,6 @@ namespace ChromaToast {
 			return clampedHEX;
 		}
 
-		public static void PrintValues(string valueType, float value1, float value2, float value3) {
-
-			Console.WriteLine("{0} : {1}, {2}, {3}", valueType, value1, value2, value3);
-		}
-
-		public static void PrintValues(string valueType, string value1) {
-
-            Console.WriteLine("{0} : {1}", valueType, value1);
-		}
-
-		public static void PrintValues(string valueType, int[] values) {
-			string output = "";
-			
-			foreach(int intValue in values) {
-				string intString = System.Convert.ToString(intValue);
-
-				output += $"{intString} ";
-			}
-
-			Console.WriteLine("{0} : {1}", valueType, output);
-		}
-
 		public class RGB {
 			public float Red {get; set;}
 			public float Green {get; set;}
