@@ -46,17 +46,27 @@ void display() {
 	Chroma.HSL newHSL = new Chroma.HSL(hue: 0.286f, saturation: 0.563f, lightness: 0.603f);
 	Chroma.HEX newHEX = new Chroma.HEX(value: "81D361");
 
-	Console.WriteLine("Normalized:");
-	CLI.Display.PrintNormalized(newRGB);
-	CLI.Display.PrintNormalized(newHSV);
-	CLI.Display.PrintNormalized(newHSL);
-	CLI.Display.PrintNormalized(newHEX);
+	Card newCard = new Card();
+	newCard.InputAll(newRGB, newHSV, newHSL, newHEX);
 
-	Console.WriteLine("\nDisplay:");
-	CLI.Display.PrintDisplay(newRGB);
-	CLI.Display.PrintDisplay(newHSV);
-	CLI.Display.PrintDisplay(newHSL);
-	CLI.Display.PrintDisplay(newHEX);
+	//Console.WriteLine("Normalized:");
+	//CLI.Display.PrintNormalized(newRGB);
+	//CLI.Display.PrintNormalized(newHSV);
+	//CLI.Display.PrintNormalized(newHSL);
+	//CLI.Display.PrintNormalized(newHEX);
+
+	//Console.WriteLine("\nDisplay:");
+	//CLI.Display.PrintDisplay(newRGB);
+	//CLI.Display.PrintDisplay(newHSV);
+	//CLI.Display.PrintDisplay(newHSL);
+	//CLI.Display.PrintDisplay(newHEX);
+
+	Console.WriteLine("Full");
+	CLI.Display.PrintFull(newCard);
+	//CLI.Display.PrintFull(newRGB);
+	//CLI.Display.PrintFull(newHSV);
+	//CLI.Display.PrintFull(newHSL);
+	//CLI.Display.PrintFull(newHEX);
 }
 
 void generate() {
@@ -82,5 +92,5 @@ void generate() {
 // Test Functions
 //clamping();
 //conversion();
-//display();
-generate();
+display();
+//generate();

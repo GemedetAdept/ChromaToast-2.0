@@ -106,6 +106,34 @@
 
 				Console.WriteLine("{0} : #{1}", label, value);
 			}
+
+			// PrintFull (print both normalized and display values)
+			public static void PrintFull(Card input) {
+				PrintFull(input.RGB);
+				PrintFull(input.HSV);
+				PrintFull(input.HSL);
+				PrintFull(input.HEX);
+			}
+
+			public static void PrintFull(Chroma.RGB input) {
+				PrintNormalized(input);
+				PrintDisplay(input);
+			}
+
+			public static void PrintFull(Chroma.HSV input) {
+				PrintNormalized(input);
+				PrintDisplay(input);
+			}
+
+			public static void PrintFull(Chroma.HSL input) {
+				PrintNormalized(input);
+				PrintDisplay(input);
+			}
+
+			public static void PrintFull(Chroma.HEX input) {
+				PrintNormalized(input);
+				PrintDisplay(input);
+			}
 		}
 	}
 }
