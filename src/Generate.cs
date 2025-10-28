@@ -41,6 +41,21 @@
 				Chroma.HSV output = new Chroma.HSV(huePrime, saturationPrime, valuePrime);
 				return output;
 			}
+
+			public static Chroma.HSL HSL() {
+				System.Random random = new System.Random();
+				
+				int hue = random.Next(0, 361);
+				int saturation = random.Next(0, 101);
+				int lightness = random.Next(0, 101);
+
+				float huePrime = (float)(hue/360.0f);
+				float saturationPrime = (float)(saturation/100.0f);
+				float lightnessPrime = (float)(lightness/100.0f);
+
+				Chroma.HSL output = new Chroma.HSL(huePrime, saturationPrime, lightnessPrime);
+				return output;
+			}
 		}
 	}
 }

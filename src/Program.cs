@@ -69,6 +69,10 @@ void generate() {
 	Chroma.HSV newHSV = Generate.Random.HSV();
 	CLI.Display.PrintNormalized(newHSV);
 	CLI.Display.PrintDisplay(newHSV);
+
+	Chroma.HSL newHSL = Generate.Random.HSL();
+	CLI.Display.PrintNormalized(newHSL);
+	CLI.Display.PrintDisplay(newHSL);
 }
 
 // Test Functions
