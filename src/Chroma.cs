@@ -40,6 +40,18 @@ namespace ChromaToast {
 			return clampedHEX;
 		}
 
+		internal static string SanitizeHEX(string input) {
+			string output = "";
+
+			if (input.Length == 7) { output = input.Remove(0, 1); }
+
+			else if (input.Length == 8) { output = input.Remove(0, 2); }
+
+			else { output = input; }
+
+			return output;
+		}
+
 		public class RGB {
 			public float Red {get; set;}
 			public float Green {get; set;}
@@ -81,6 +93,7 @@ namespace ChromaToast {
 			public string Value {get; set;}
 
 			public HEX(string value) {
+				value = SanitizeHEX(value);
 				value = value.ToUpper();
 				Value = ClampValues(value);
 

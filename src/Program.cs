@@ -100,9 +100,18 @@ void card() {
 	CLI.Display.PrintFull(newCard);
 }
 
+void sanitize() {
+	Chroma.HEX newHEX = new Chroma.HEX("#FFFFFF");
+	CLI.Display.PrintFull(newHEX);
+
+	newHEX = new Chroma.HEX("0xFFFFFF");
+	CLI.Display.PrintFull(newHEX);
+}
+
 // Test Functions
 //clamping();
 //conversion();
-display();
+//display();
 //generate();
 //card();
+sanitize();
