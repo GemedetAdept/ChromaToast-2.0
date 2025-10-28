@@ -57,8 +57,8 @@
 
 				string label = "Chroma.HEX (Normalized)";
 
-				Console.WriteLine("{0} : {1} {2} {3} {4} {5} {6}", label,
-					integers[0], integers[1], integers[2], integers[3], integers[4], integers[5]);
+				Console.WriteLine("{0} : {1}, {2}, {3}", label,
+					integers[0], integers[1], integers[2]);
 			}
 
 			// PrintDisplay (conventional values for color spaces i.e., 255 for RGB instead of 1.0)

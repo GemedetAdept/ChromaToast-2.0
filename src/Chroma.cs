@@ -106,18 +106,25 @@ namespace ChromaToast {
 				value = value.ToUpper();
 				Value = ClampValues(value);
 
-				Integers = ValuetoIntegers(Value);
+				Integers = ValueToIntegers(Value);
 			}
 
-			private static int[] ValuetoIntegers(string value) {
-				char[] charArray = value.ToCharArray();
-				int[] intArray = new int[6];
+			private static int[] ValueToIntegers(string value) {
+				string[] values = new string[3];
 
-				for (int i=0; i < charArray.Length; i++) { 
-					intArray[i] = System.Convert.ToInt32(charArray[i]);
+				int valuesIter = 0;
+				for (int i = 0; i < value.Length; i+=2) {
+					values[valuesIter] = string.Concat(value[i], value[i+1]);
+
+					valuesIter++;
 				}
 
-				return intArray;
+				int[] output = new int[3];
+				for (int i = 0; i < values.Length; i++) {
+					output[i] = int.Parse(values[i], System.Globalization.NumberStyles.HexNumber);
+				}
+
+				return output;
 			}
 		}
 	}
