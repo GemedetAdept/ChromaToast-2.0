@@ -18,5 +18,33 @@
 			HSL = hsl;
 			HEX = hex;
 		}
+
+		public void InputChroma(Chroma.RGB input) {
+			RGB = input;
+			HSV = Convert.RGB.ToHSV(input);
+			HSL = Convert.RGB.ToHSL(input);
+			HEX = Convert.RGB.ToHEX(input);
+		}
+
+		public void InputChroma(Chroma.HSV input) {
+			RGB = Convert.HSV.ToRGB(input);
+			HSV = input;
+			HSL = Convert.HSV.ToHSL(input);
+			HEX = Convert.HSV.ToHEX(input);
+		}
+
+		public void InputChroma(Chroma.HSL input) {
+			RGB = Convert.HSL.ToRGB(input);
+			HSV = Convert.HSL.ToHSV(input);
+			HSL = input;
+			HEX = Convert.HSL.ToHEX(input);
+		}
+
+		public void InputChroma(Chroma.HEX input) {
+			RGB = Convert.HEX.ToRGB(input);
+			HSV = Convert.HEX.ToHSV(input);
+			HSL = Convert.HEX.ToHSL(input);
+			HEX = input;
+		}
 	}
 }

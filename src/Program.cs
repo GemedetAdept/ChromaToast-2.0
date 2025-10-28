@@ -73,24 +73,36 @@ void generate() {
 	Console.WriteLine("Generate.Random");
 
 	Chroma.RGB newRGB = Generate.Random.RGB();
-	CLI.Display.PrintNormalized(newRGB);
-	CLI.Display.PrintDisplay(newRGB);
+	CLI.Display.PrintFull(newRGB);
 
 	Chroma.HSV newHSV = Generate.Random.HSV();
-	CLI.Display.PrintNormalized(newHSV);
-	CLI.Display.PrintDisplay(newHSV);
+	CLI.Display.PrintFull(newHSV);
 
 	Chroma.HSL newHSL = Generate.Random.HSL();
-	CLI.Display.PrintNormalized(newHSL);
-	CLI.Display.PrintDisplay(newHSL);
+	CLI.Display.PrintFull(newHSL);
 
 	Chroma.HEX newHEX = Generate.Random.HEX();
-	CLI.Display.PrintNormalized(newHEX);
-	CLI.Display.PrintDisplay(newHEX);
+	CLI.Display.PrintFull(newHEX);
+
+	Console.WriteLine("\nRandom Card");
+	Card newCard = Generate.Random.Card();
+	CLI.Display.PrintFull(newCard);
+}
+
+void card() {
+	Console.WriteLine("\nBlank Card");
+	Card newCard = new Card();
+	CLI.Display.PrintFull(newCard);
+
+	Console.WriteLine("\nGeneration of other chroma from one input");
+	Chroma.RGB newRGB = Generate.Random.RGB();
+	newCard.InputChroma(newRGB);
+	CLI.Display.PrintFull(newCard);
 }
 
 // Test Functions
 //clamping();
 //conversion();
-display();
+//display();
 //generate();
+card();
