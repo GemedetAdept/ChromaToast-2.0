@@ -11,7 +11,12 @@ namespace ChromaToast {
 
 		public Palette() {
 			Cards = new List<Card>();
-			Count = 0;
+			Count = Cards.Count;
+		}
+
+		public void AppendCard(Card card) {
+			Cards.Add(card);
+			Count++;
 		}
 	}
 }
