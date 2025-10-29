@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ChromaToast {
-	
 	public class CLI {
 		static CLI() { }
 

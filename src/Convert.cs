@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ChromaToast {
-
 	public class Convert {
 		/* Conversion equations referenced from:
 		 * Ford, A. & Roberts, A. (1998) Color Space Conversions
@@ -68,13 +67,13 @@ namespace ChromaToast {
 				float bluePrime = (max-blue)/chroma;
 
 				float huePrime;
-				if (chroma==0) { huePrime=0; }
-				else if (red==max&&green==min) { huePrime=5+bluePrime; }
-				else if (red==max&&green!=min) { huePrime=1-greenPrime; }
-				else if (green==max&&blue==min) { huePrime=redPrime+1; }
-				else if (green==max&&blue!=min) { huePrime=3-bluePrime; }
-				else if (red==max) { huePrime=3+greenPrime; }
-				else { huePrime=5-redPrime; }
+				if (chroma == 0) { huePrime = 0; }
+				else if (red==max && green==min) { huePrime = 5+bluePrime; }
+				else if (red==max && green!=min) { huePrime = 1-greenPrime; }
+				else if (green==max && blue==min) { huePrime = redPrime+1; }
+				else if (green==max && blue!=min) { huePrime = 3-bluePrime; }
+				else if (red==max) { huePrime = 3+greenPrime; }
+				else { huePrime = 5-redPrime; }
 
 				float hue = (huePrime*60)/360;
 
@@ -115,7 +114,7 @@ namespace ChromaToast {
 				int primaryColor = (int)Math.Floor(huePrime);
 				float secondaryColor = huePrime - primaryColor;
 
-				float partA = (1-saturation)*input.Value;
+				float partA = (1-saturation) * input.Value;
 				float partB = (1-(saturation * secondaryColor))*value;
 				float partC = (1-(saturation * (1-secondaryColor)))*value;
 
@@ -123,12 +122,12 @@ namespace ChromaToast {
 				float greenPrime = 0.0f;
 				float bluePrime = 0.0f;
 
-				if (primaryColor==0) { redPrime=value; greenPrime=partC; bluePrime=partA; }
-				else if (primaryColor==1) { redPrime=partB; greenPrime=value; bluePrime=partA; }
-				else if (primaryColor==2) { redPrime=partA; greenPrime=value; bluePrime=partC; }
-				else if (primaryColor==3) { redPrime=partA; greenPrime=partB; bluePrime=value; }
-				else if (primaryColor==4) { redPrime=partC; greenPrime=partA; bluePrime=value; }
-				else if (primaryColor==5) { redPrime=value; greenPrime=partA; bluePrime=partB; }
+				if (primaryColor == 0) { redPrime=value; greenPrime=partC; bluePrime=partA; }
+				else if (primaryColor == 1) { redPrime=partB; greenPrime=value; bluePrime=partA; }
+				else if (primaryColor == 2) { redPrime=partA; greenPrime=value; bluePrime=partC; }
+				else if (primaryColor == 3) { redPrime=partA; greenPrime=partB; bluePrime=value; }
+				else if (primaryColor == 4) { redPrime=partC; greenPrime=partA; bluePrime=value; }
+				else if (primaryColor == 5) { redPrime=value; greenPrime=partA; bluePrime=partB; }
 
 				Chroma.RGB output = new Chroma.RGB(redPrime, greenPrime, bluePrime);
 				return output;
@@ -144,7 +143,7 @@ namespace ChromaToast {
 				float lightness = value*(1-(saturation/2));
 
 				float saturationPrime = 0.0f;
-				if (lightness==0 || lightness==1) { saturationPrime = 0; }
+				if (lightness == 0 || lightness == 1) { saturationPrime = 0; }
 				else { saturationPrime = (value-lightness)/(Math.Min(lightness, 1-lightness)); }
 
 				Chroma.HSL output = new Chroma.HSL(huePrime, saturationPrime, lightness);
@@ -201,7 +200,7 @@ namespace ChromaToast {
 				float value = lightness + saturation*Math.Min(lightness, 1-lightness);
 
 				float saturationPrime = 0.0f;
-				if (value==0) { saturationPrime = 0; }
+				if (value == 0) { saturationPrime = 0; }
 				else { saturationPrime = 2 * (1-(lightness/value)); }
 
 				Chroma.HSV output = new Chroma.HSV(huePrime, saturationPrime, value);

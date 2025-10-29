@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ChromaToast {
-
 	public class Chroma {
 
 		internal static float ClampValues(float floor, float input, float ceiling) {

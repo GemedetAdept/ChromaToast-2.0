@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace ChromaToast {
 	public class Generate {
-		
 		public class Random {
 			public static Card Card() {
 				Chroma.RGB rgb = Generate.Random.RGB();
