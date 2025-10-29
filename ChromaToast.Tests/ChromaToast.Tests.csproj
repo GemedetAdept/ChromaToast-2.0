@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\ChromaToast.csproj" />
+    <ProjectReference Include="..ChromaToast.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -112,10 +112,20 @@ void sanitize() {
 	CLI.Display.PrintFull(newHEX);
 }
 
+void exceptions() {
+	int[] array1 = new int[] {2, 3};
+	int[] array2 = new int[] {4, 5, 6 };
+
+	if (array1.Length != array2.Length) {
+		throw new ArrayIndexMismatchException(array1.Length, array2.Length);	
+	}
+}
+
 // Test Functions
 //clamping();
 //conversion();
 //display();
 //generate();
 //card();
-sanitize();
+//sanitize();
+exceptions();

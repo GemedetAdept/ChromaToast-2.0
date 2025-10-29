@@ -1,4 +1,4 @@
-﻿using ChromaToast.Chroma;
+﻿using ChromaToast;
 
 namespace ChromaToast.Tests {
 	public class RGBTests {
