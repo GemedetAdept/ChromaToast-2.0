@@ -118,7 +118,7 @@ void exceptions() {
 
 	try {
 		if (array1.Length!=array2.Length) {
-			throw new ArrayLengthMismatchException("Length of arrays do not match.");
+			throw new ArrayLengthMismatchException();
 		}
 	}
 
