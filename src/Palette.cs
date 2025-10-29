@@ -18,5 +18,9 @@ namespace ChromaToast {
 			Cards.Add(card);
 			Count++;
 		}
+
+		public void WriteCard(Card card, int index) {
+			Cards[index] = card;	
+		}
 	}
 }
