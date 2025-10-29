@@ -7,12 +7,8 @@
       "RelativeMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|solutionrelative:src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|c:\\users\\vivia\\programming\\c#\\chromatoast\\src\\exceptions\\arrayindexmismatchexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|solutionrelative:src\\exceptions\\arrayindexmismatchexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D15DCBD-694C-4069-BA45-5076A9DDAB2A}|ChromaToast.Tests\\ChromaToast.Tests.csproj|c:\\users\\vivia\\programming\\c#\\chromatoast\\chromatoast.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D15DCBD-694C-4069-BA45-5076A9DDAB2A}|ChromaToast.Tests\\ChromaToast.Tests.csproj|solutionrelative:chromatoast.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|c:\\users\\vivia\\programming\\c#\\chromatoast\\src\\exceptions\\largestindexmismatchexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|solutionrelative:src\\exceptions\\largestindexmismatchexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|c:\\users\\vivia\\programming\\c#\\chromatoast\\src\\palette.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,14 +51,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ArrayIndexMismatchException.cs",
-              "DocumentMoniker": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Exceptions\\ArrayIndexMismatchException.cs",
-              "RelativeDocumentMoniker": "src\\Exceptions\\ArrayIndexMismatchException.cs",
-              "ToolTip": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Exceptions\\ArrayIndexMismatchException.cs",
-              "RelativeToolTip": "src\\Exceptions\\ArrayIndexMismatchException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAEAAAAyAAAAAAAAAA==",
+              "Title": "LargestIndexMismatchException.cs",
+              "DocumentMoniker": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Exceptions\\LargestIndexMismatchException.cs",
+              "RelativeDocumentMoniker": "src\\Exceptions\\LargestIndexMismatchException.cs",
+              "ToolTip": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Exceptions\\LargestIndexMismatchException.cs",
+              "RelativeToolTip": "src\\Exceptions\\LargestIndexMismatchException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAABhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T16:47:24.826Z",
+              "WhenOpened": "2025-10-29T17:45:05.118Z",
               "EditorCaption": ""
             },
             {
@@ -73,7 +69,7 @@
               "RelativeDocumentMoniker": "src\\Program.cs",
               "ToolTip": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Program.cs",
               "RelativeToolTip": "src\\Program.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAQwH0AAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAQwHQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-29T16:43:11.204Z",
               "EditorCaption": ""
@@ -81,19 +77,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\ChromaToast.Tests\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "ChromaToast.Tests\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\ChromaToast.Tests\\UnitTest1.cs",
-              "RelativeToolTip": "ChromaToast.Tests\\UnitTest1.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowCwAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T16:33:21.79Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Palette.cs",
               "DocumentMoniker": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Palette.cs",
               "RelativeDocumentMoniker": "src\\Palette.cs",
@@ -101,11 +84,12 @@
               "RelativeToolTip": "src\\Palette.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T13:21:04.062Z"
+              "WhenOpened": "2025-10-29T13:21:04.062Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Generate.cs",
               "DocumentMoniker": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Generate.cs",
               "RelativeDocumentMoniker": "src\\Generate.cs",
@@ -117,7 +101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Chroma.cs",
               "DocumentMoniker": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Chroma.cs",
               "RelativeDocumentMoniker": "src\\Chroma.cs",
@@ -129,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Convert.cs",
               "DocumentMoniker": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Convert.cs",
               "RelativeDocumentMoniker": "src\\Convert.cs",
@@ -141,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "Card.cs",
               "DocumentMoniker": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Card.cs",
               "RelativeDocumentMoniker": "src\\Card.cs",

@@ -114,16 +114,35 @@ void sanitize() {
 
 void exceptions() {
 	int[] array1 = new int[] {2, 3};
-	int[] array2 = new int[] {4, 5, 6 };
+	int[] array2 = new int[] {4, 5, 8};
 
 	try {
-		if (array1.Length!=array2.Length) {
+		if (array1.Length != array2.Length) {
 			throw new ArrayLengthMismatchException();
 		}
 	}
 
-	catch(ArrayLengthMismatchException ex) {
-		Console.WriteLine(ex.Message + " Array lengths: {0}, {1}", array1.Length, array2.Length);
+	catch (ArrayLengthMismatchException ex) {
+		Console.WriteLine(ex.Message + " Array lengths: {0}, {1}.", array1.Length, array2.Length);
+	}
+
+	bool largestIndexMatches = false;
+	int largest = Int32.MinValue;
+	try {
+		for (int i = 0; i < array2.Length; i++) {
+			if (array2[i] > largest) { largest = array2[i]; }
+		}
+
+		if (array1.Length < largest) {
+			throw new LargestIndexMismatchException();	
+		}
+		else { largestIndexMatches = true; }
+	}
+
+	catch(LargestIndexMismatchException ex) {
+		Console.WriteLine(ex.Message + " Target array length: {0}. Largest index input: {1}.", 
+			array1.Length, largest	
+		);	
 	}
 }
 
