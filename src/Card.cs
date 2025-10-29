@@ -1,4 +1,10 @@
-﻿namespace ChromaToast {
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ChromaToast {
 	public class Card { 
 		public Chroma.RGB RGB {get;set;}
 		public Chroma.HSV HSV {get;set;}
