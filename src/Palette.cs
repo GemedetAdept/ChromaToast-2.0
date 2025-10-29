@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace ChromaToast {
 	internal class Palette {
+		public List<Card> Cards {get; set;}
+		public int Count {get; set;}
 
 		public Palette() {
-			
+			Cards = new List<Card>();
+			Count = 0;
 		}
 	}
 }
