@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\Exceptions\\ArrayIndexMismatchException.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Exceptions\\ArrayIndexMismatchException.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|c:\\users\\vivia\\programming\\c#\\chromatoast\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|solutionrelative:src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D15DCBD-694C-4069-BA45-5076A9DDAB2A}|ChromaToast.Tests\\ChromaToast.Tests.csproj|c:\\users\\vivia\\programming\\c#\\chromatoast\\chromatoast.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D15DCBD-694C-4069-BA45-5076A9DDAB2A}|ChromaToast.Tests\\ChromaToast.Tests.csproj|solutionrelative:chromatoast.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|c:\\users\\vivia\\programming\\c#\\chromatoast\\src\\exceptions\\arrayindexmismatchexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|solutionrelative:src\\exceptions\\arrayindexmismatchexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D15DCBD-694C-4069-BA45-5076A9DDAB2A}|ChromaToast.Tests\\ChromaToast.Tests.csproj|c:\\users\\vivia\\programming\\c#\\chromatoast\\chromatoast.tests\\chromatoast.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{8D15DCBD-694C-4069-BA45-5076A9DDAB2A}|ChromaToast.Tests\\ChromaToast.Tests.csproj|solutionrelative:chromatoast.tests\\chromatoast.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{8D15DCBD-694C-4069-BA45-5076A9DDAB2A}|ChromaToast.Tests\\ChromaToast.Tests.csproj|c:\\users\\vivia\\programming\\c#\\chromatoast\\chromatoast.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D15DCBD-694C-4069-BA45-5076A9DDAB2A}|ChromaToast.Tests\\ChromaToast.Tests.csproj|solutionrelative:chromatoast.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|c:\\users\\vivia\\programming\\c#\\chromatoast\\src\\palette.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -59,27 +55,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ArrayIndexMismatchException.cs",
+              "DocumentMoniker": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Exceptions\\ArrayIndexMismatchException.cs",
+              "RelativeDocumentMoniker": "src\\Exceptions\\ArrayIndexMismatchException.cs",
+              "ToolTip": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Exceptions\\ArrayIndexMismatchException.cs",
+              "RelativeToolTip": "src\\Exceptions\\ArrayIndexMismatchException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAEAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T16:47:24.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Program.cs",
               "RelativeDocumentMoniker": "src\\Program.cs",
               "ToolTip": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Program.cs",
               "RelativeToolTip": "src\\Program.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAQwH0AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-29T16:43:11.204Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ChromaToast.Tests.csproj",
-              "DocumentMoniker": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\ChromaToast.Tests\\ChromaToast.Tests.csproj",
-              "RelativeDocumentMoniker": "ChromaToast.Tests\\ChromaToast.Tests.csproj",
-              "ToolTip": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\ChromaToast.Tests\\ChromaToast.Tests.csproj",
-              "RelativeToolTip": "ChromaToast.Tests\\ChromaToast.Tests.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-29T16:34:42.685Z"
             },
             {
               "$type": "Document",
@@ -96,20 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ArrayIndexMismatchException.cs",
-              "DocumentMoniker": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\Exceptions\\ArrayIndexMismatchException.cs",
-              "RelativeDocumentMoniker": "Exceptions\\ArrayIndexMismatchException.cs",
-              "ToolTip": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\Exceptions\\ArrayIndexMismatchException.cs",
-              "RelativeToolTip": "Exceptions\\ArrayIndexMismatchException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T16:18:53.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Palette.cs",
               "DocumentMoniker": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Palette.cs",
               "RelativeDocumentMoniker": "src\\Palette.cs",
@@ -121,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Generate.cs",
               "DocumentMoniker": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Generate.cs",
               "RelativeDocumentMoniker": "src\\Generate.cs",
@@ -133,7 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Chroma.cs",
               "DocumentMoniker": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Chroma.cs",
               "RelativeDocumentMoniker": "src\\Chroma.cs",
@@ -145,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "Convert.cs",
               "DocumentMoniker": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Convert.cs",
               "RelativeDocumentMoniker": "src\\Convert.cs",
@@ -157,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "Card.cs",
               "DocumentMoniker": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Card.cs",
               "RelativeDocumentMoniker": "src\\Card.cs",

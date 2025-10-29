@@ -116,8 +116,14 @@ void exceptions() {
 	int[] array1 = new int[] {2, 3};
 	int[] array2 = new int[] {4, 5, 6 };
 
-	if (array1.Length != array2.Length) {
-		throw new ArrayIndexMismatchException(array1.Length, array2.Length);	
+	try {
+		if (array1.Length!=array2.Length) {
+			throw new ArrayLengthMismatchException("Length of arrays do not match.");
+		}
+	}
+
+	catch(ArrayLengthMismatchException ex) {
+		Console.WriteLine(ex.Message + " Array lengths: {0}, {1}", array1.Length, array2.Length);
 	}
 }
 
