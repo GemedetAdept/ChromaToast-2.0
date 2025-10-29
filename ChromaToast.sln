@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36603.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChromaToast", "ChromaToast.csproj", "{D517DA42-85E3-8282-A8A2-2D5118656A94}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChromaToast", "src/ChromaToast.csproj", "{D517DA42-85E3-8282-A8A2-2D5118656A94}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChromaToast.Tests", "ChromaToast.Tests\ChromaToast.Tests.csproj", "{8D15DCBD-694C-4069-BA45-5076A9DDAB2A}"
 EndProject

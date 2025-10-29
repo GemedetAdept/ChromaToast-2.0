@@ -1,6 +1,4 @@
-﻿using ChromaToast;
-
-namespace ChromaToast.Tests {
+﻿namespace ChromaToast.Tests {
 	public class RGBTests {
 		[Fact]
 		public void RedValue_UnderFloor_ReturnsFloor() {
@@ -10,7 +8,7 @@ namespace ChromaToast.Tests {
 			float valueBlue = 1.0f;
 			float expected = 0.0f;
 
-			var colorRGB = new ChromaToast.Chroma.Chroma.RGB(valueRed, valueGreen, valueBlue);
+			var colorRGB = new ChromaToast.Chroma.RGB(valueRed, valueGreen, valueBlue);
 			float result = colorRGB.Red;
 
 			Assert.Equal(expected, result);
@@ -24,7 +22,7 @@ namespace ChromaToast.Tests {
 			float valueBlue = 1.0f;
 			float expected = 1.0f;
 
-			var colorRGB = new ChromaToast.Chroma.Chroma.RGB(valueRed, valueGreen,valueBlue);
+			var colorRGB = new ChromaToast.Chroma.RGB(valueRed, valueGreen,valueBlue);
 			float result = colorRGB.Red;
 
 			Assert.Equal(expected, result);
@@ -38,7 +36,7 @@ namespace ChromaToast.Tests {
 			float valueBlue = 1.0f;
 			float expected = 0.0f;
 
-			var colorRGB = new ChromaToast.Chroma.Chroma.RGB(valueRed, valueGreen, valueBlue);
+			var colorRGB = new ChromaToast.Chroma.RGB(valueRed, valueGreen, valueBlue);
 			float result = colorRGB.Green;
 
 			Assert.Equal(expected, result);
@@ -52,7 +50,7 @@ namespace ChromaToast.Tests {
 			float valueBlue = 1.0f;
 			float expected = 1.0f;
 
-			var colorRGB = new ChromaToast.Chroma.Chroma.RGB(valueRed, valueGreen, valueBlue);
+			var colorRGB = new ChromaToast.Chroma.RGB(valueRed, valueGreen, valueBlue);
 			float result = colorRGB.Green;
 
 			Assert.Equal(expected, result);
@@ -66,7 +64,7 @@ namespace ChromaToast.Tests {
 			float valueBlue = -0.7f;
 			float expected = 0.0f;
 
-			var colorRGB = new ChromaToast.Chroma.Chroma.RGB(valueRed, valueGreen, valueBlue);
+			var colorRGB = new ChromaToast.Chroma.RGB(valueRed, valueGreen, valueBlue);
 			float result = colorRGB.Blue;
 
 			Assert.Equal(expected, result);
@@ -80,7 +78,7 @@ namespace ChromaToast.Tests {
 			float valueBlue = 1.7f;
 			float expected = 1.0f;
 
-			var colorRGB = new ChromaToast.Chroma.Chroma.RGB(valueRed, valueGreen, valueBlue);
+			var colorRGB = new ChromaToast.Chroma.RGB(valueRed, valueGreen, valueBlue);
 			float result = colorRGB.Blue;
 
 			Assert.Equal(expected, result);
