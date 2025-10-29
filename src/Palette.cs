@@ -19,8 +19,8 @@ namespace ChromaToast {
 			Count++;
 		}
 
-		public void WriteCard(Card card, int index) {
-			Cards[index] = card;	
+		public void OverwriteCard(Card card, int index) {
+			Cards[index] = card;
 		}
 
 		public void AppendPalette(Palette palette) {
