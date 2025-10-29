@@ -22,5 +22,9 @@ namespace ChromaToast {
 		public void WriteCard(Card card, int index) {
 			Cards[index] = card;	
 		}
+
+		public void AppendPalette(Palette palette) {
+			Cards.AddRange(palette.Cards);	
+		}
 	}
 }
