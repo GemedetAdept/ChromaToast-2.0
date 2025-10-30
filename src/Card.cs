@@ -18,6 +18,15 @@ namespace ChromaToast {
 			HEX = new Chroma.HEX("000000");
 		}
 
+		public void CloneFromCard(Card input) {
+			Chroma.RGB rgb = input.RGB;
+			Chroma.HSV hsv = input.HSV;
+			Chroma.HSL hsl = input.HSL;
+			Chroma.HEX hex = input.HEX;
+
+			InputAll(rgb, hsv, hsl, hex);
+		}
+
 		public void InputAll(Chroma.RGB rgb, Chroma.HSV hsv, Chroma.HSL hsl, Chroma.HEX hex) {
 			RGB = rgb;
 			HSV = hsv;
