@@ -179,11 +179,11 @@ void harmony() {
 	CLI.Display.PrintDisplay(cards0[0]);
 	CLI.Display.PrintDisplay(cards0[1]);
 
-	//Console.WriteLine("\n| SplitComplementary Harmony Pattern |");
-	//Card[] cards1 = Harmony.Hue.SplitComplementary(card0);
-	//CLI.Display.PrintDisplay(cards1[0]);
-	//CLI.Display.PrintDisplay(cards1[1]);
-	//CLI.Display.PrintDisplay(cards1[2]);
+	Console.WriteLine("\n| SplitComplementary Harmony Pattern |");
+	Card[] cards1 = Harmony.Hue.SplitComplementary(card0);
+	CLI.Display.PrintDisplay(cards1[0]);
+	CLI.Display.PrintDisplay(cards1[1]);
+	CLI.Display.PrintDisplay(cards1[2]);
 }
 
 // Test Functions
