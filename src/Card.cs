@@ -34,6 +34,22 @@ namespace ChromaToast {
 			HEX = hex;
 		}
 
+		public void UpdateFromRGB() {
+			InputChroma(RGB);
+		}
+
+		public void UpdateFromHSV() {
+			InputChroma(HSV);	
+		}
+
+		public void UpdateFromHSL() {
+			InputChroma(HSL);	
+		}
+		
+		public void UpdateFromHEX() {
+			InputChroma(HEX);	
+		}
+
 		public void InputChroma(Chroma.RGB input) {
 			RGB = input;
 			HSV = Convert.RGB.ToHSV(input);
