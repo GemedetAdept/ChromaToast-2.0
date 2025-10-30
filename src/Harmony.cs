@@ -31,7 +31,7 @@ namespace ChromaToast {
 
 			public static Card[] Analogous(Card card0) {
 				
-				int[] offsets = new int[] { 30, 330 };
+				int[] offsets = new int[] { 10, 350 };
 
 				Card card1 = Harmony.Offset(card0, offsets[0]);
 				Card card2 = Harmony.Offset(card0, offsets[1]);
@@ -49,7 +49,7 @@ namespace ChromaToast {
 			float inputValue = inputHSV.Value;
 
 			int inputHuePrime = (int)(inputHue * 360);
-			int outputHue = Math.Abs((inputHuePrime + offset) - 360);
+			int outputHue = Math.Abs((inputHuePrime + offset) % 360);
 
 			float outputHuePrime = (float)(outputHue/360.0f);
 

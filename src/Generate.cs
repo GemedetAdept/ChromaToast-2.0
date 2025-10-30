@@ -8,13 +8,11 @@ namespace ChromaToast {
 	public class Generate {
 		public class Random {
 			public static Card Card() {
-				Chroma.RGB rgb = Generate.Random.RGB();
-				Chroma.HSV hsv = Generate.Random.HSV();
-				Chroma.HSL hsl = Generate.Random.HSL();
-				Chroma.HEX hex = Generate.Random.HEX();
-
 				Card output = new Card();
-				output.InputAll(rgb, hsv, hsl, hex);
+
+				Chroma.RGB rgb = Generate.Random.RGB();
+
+				output.InputChroma(rgb);
 				return output;
 			}
 
