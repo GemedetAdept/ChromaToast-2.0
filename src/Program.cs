@@ -147,6 +147,30 @@ void exceptions() {
 	}
 }
 
+void palette() {
+	Palette newPalette = new Palette();
+
+	Console.WriteLine("\n| Initial State |");
+	Console.WriteLine(newPalette.Cards);
+	Console.WriteLine("Card Count: {0}", newPalette.Count);
+
+	Console.WriteLine("\n| Add Blank Card |");
+	Card card0 = new Card();
+	newPalette.AppendCard(card0);
+	Console.WriteLine("Card Count: {0}", newPalette.Count);
+
+	Console.WriteLine("\n| Add Random Card |");
+	Card card1 = Generate.Random.Card();
+	newPalette.AppendCard(card1);
+	Console.WriteLine("Card Count: {0}", newPalette.Count);
+
+	Console.WriteLine("\n| Print Card Details |");
+	foreach (Card card in newPalette.Cards) {
+		Console.WriteLine("\n");
+		CLI.Display.PrintDisplay(card);
+	}
+}
+
 // Test Functions
 //clamping();
 //conversion();
@@ -154,4 +178,5 @@ void exceptions() {
 //generate();
 //card();
 //sanitize();
-exceptions();
+//exceptions();
+palette();
