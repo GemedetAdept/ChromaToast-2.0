@@ -31,7 +31,7 @@ namespace ChromaToast {
 
 			public static Card[] Analogous(Card card0) {
 				
-				int[] offsets = new int[] { 10, 350 };
+				int[] offsets = new int[] { 20, 340 };
 
 				Card card1 = Harmony.Offset(card0, offsets[0]);
 				Card card2 = Harmony.Offset(card0, offsets[1]);
