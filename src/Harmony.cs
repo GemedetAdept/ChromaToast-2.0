@@ -11,14 +11,16 @@ namespace ChromaToast {
 			public static Card[] Complementary(Card card0) {
 				Chroma.HSV hsv0 = card0.HSV;
 				float hue0 = hsv0.Hue;
-				Console.WriteLine(hue0);
+				float saturation0 = hsv0.Saturation;
+				float value0 = hsv0.Value;
 
 				Card card1 = new Card();
 
 				float hue1 = Math.Abs((hue0 + 0.5f) - 1.0f);
-				Console.WriteLine(hue1);
-				Chroma.HSV hsv1 = card1.HSV;
-				hsv1.Hue = hue1;
+				float saturation1 = saturation0;
+				float value1 = value0;
+
+				Chroma.HSV hsv1 = new Chroma.HSV(hue1, saturation1, value1);
 
 				card1.InputChroma(hsv1);
 
