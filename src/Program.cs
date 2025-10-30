@@ -174,12 +174,10 @@ void palette() {
 void harmony() {
 	Card card0 = Generate.Random.Card();
 
-
-
-	//Console.WriteLine("\n| Complementary Harmony Pattern |");
-	//Card[] cards0 = Harmony.Hue.Complementary(card0);
-	//CLI.Display.PrintDisplay(cards0[0]);
-	//CLI.Display.PrintDisplay(cards0[1]);
+	Console.WriteLine("\n| Complementary Harmony Pattern |");
+	Card[] cards0 = Harmony.Hue.Complementary(card0);
+	CLI.Display.PrintDisplay(cards0[0]);
+	CLI.Display.PrintDisplay(cards0[1]);
 
 	//Console.WriteLine("\n| SplitComplementary Harmony Pattern |");
 	//Card[] cards1 = Harmony.Hue.SplitComplementary(card0);

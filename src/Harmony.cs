@@ -9,23 +9,13 @@ namespace ChromaToast {
 		public class Hue {
 			
 			public static Card[] Complementary(Card card0) {
-				Chroma.HSV hsv0 = card0.HSV;
-				float hue0 = hsv0.Hue;
-				float saturation0 = hsv0.Saturation;
-				float value0 = hsv0.Value;
+				
+				Card card1 = Harmony.Offset(card0, 180);
 
-				Card card1 = new Card();
+				Card[] output = new Card[2];
+				output[0] = card0;
+				output[1] = card1;
 
-				float[] harmonyAngles = new float[] { (float)(180/360.0f) };
-
-				float hue1 = Math.Abs((hue0 + harmonyAngles[0]) - 1.0f);
-				float saturation1 = saturation0;
-				float value1 = value0;
-
-				Chroma.HSV hsv1 = new Chroma.HSV(hue1, saturation1, value1);
-				card1.InputChroma(hsv1);
-
-				Card[] output = new Card[] { card0, card1 };
 				return output;
 			}
 
@@ -67,9 +57,13 @@ namespace ChromaToast {
 			float inputSaturation = inputHSV.Saturation;
 			float inputValue = inputHSV.Value;
 
-			int inputHuePrime = (int)inputHue * 360;
+			int inputHuePrime = (int)(inputHue * 360);
 			int outputHue = Math.Abs((inputHuePrime + offset) - 360);
-			float outputHuePrime = (float)outputHue/360.0f;
+
+			Console.WriteLine(inputHuePrime);
+			Console.WriteLine(outputHue);
+
+			float outputHuePrime = (float)(outputHue/360.0f);
 
 			Card output = new Card();
 			Chroma.HSV outputHSV = new Chroma.HSV(outputHuePrime, inputSaturation, inputValue);
