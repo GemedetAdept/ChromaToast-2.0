@@ -16,15 +16,47 @@ namespace ChromaToast {
 
 				Card card1 = new Card();
 
-				float hue1 = Math.Abs((hue0 + 0.5f) - 1.0f);
+				float[] harmonyAngles = new float[] { (float)(180/360.0f) };
+
+				float hue1 = Math.Abs((hue0 + harmonyAngles[0]) - 1.0f);
 				float saturation1 = saturation0;
 				float value1 = value0;
 
 				Chroma.HSV hsv1 = new Chroma.HSV(hue1, saturation1, value1);
-
 				card1.InputChroma(hsv1);
 
 				Card[] output = new Card[] { card0, card1 };
+				return output;
+			}
+
+			public static Card[] SplitComplementary(Card card0) {
+				Chroma.HSV hsv0 = card0.HSV;
+				float hue0 = hsv0.Hue;
+				float saturation0 = hsv0.Saturation;
+				float value0 = hsv0.Value;
+
+				Card card1 = new Card();
+				Card card2 = new Card();
+
+				float[] harmonyAngles = new float[] {
+					(float)(150/360.0f), (float)(210/360.0f)
+				};
+
+				Card[] output = new Card[3];
+				for (int i = 0; i < output.Length; i++) {
+					if (i == 0) { continue; }
+					else {
+						float hue = Math.Abs((hue0 + harmonyAngles[i-1]) - 1.0f);
+						float saturation = saturation0;
+						float value = value0;
+
+						Chroma.HSV hsv = new Chroma.HSV(hue, saturation, value);
+						output[i] = new Card();
+						output[i].InputChroma(hsv);
+					}
+				}
+
+				output[0] = card0;
 				return output;
 			}
 		}
