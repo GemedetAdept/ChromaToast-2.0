@@ -61,13 +61,14 @@ namespace ChromaToast {
 			}
 		}
 
-		public static Card Offset(Card input, float baseHue, int offset) {
+		public static Card Offset(Card input, int offset) {
 			Chroma.HSV inputHSV = input.HSV;
+			float inputHue = inputHSV.Hue;
 			float inputSaturation = inputHSV.Saturation;
 			float inputValue = inputHSV.Value;
 
-			int baseHuePrime = (int)baseHue * 360;
-			int outputHue = Math.Abs((baseHuePrime + offset) - 360);
+			int inputHuePrime = (int)inputHue * 360;
+			int outputHue = Math.Abs((inputHuePrime + offset) - 360);
 			float outputHuePrime = (float)outputHue/360.0f;
 
 			Card output = new Card();
