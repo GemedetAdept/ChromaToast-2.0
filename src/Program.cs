@@ -184,6 +184,12 @@ void harmony() {
 	CLI.Display.PrintDisplay(cards1[0]);
 	CLI.Display.PrintDisplay(cards1[1]);
 	CLI.Display.PrintDisplay(cards1[2]);
+
+	Console.WriteLine("\n| Analogous Harmony Pattern |");
+	Card[] cards2 = Harmony.Hue.Analogous(card0);
+	CLI.Display.PrintDisplay(cards2[0]);
+	CLI.Display.PrintDisplay(cards2[1]);
+	CLI.Display.PrintDisplay(cards2[2]);
 }
 
 // Test Functions
