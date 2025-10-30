@@ -171,6 +171,16 @@ void palette() {
 	}
 }
 
+void harmony() {
+	Card card0 = Generate.Random.Card();
+
+	Card[] cards = Harmony.Hue.Complementary(card0);
+
+	Console.WriteLine("\n| Complementary Harmony Pattern |");
+	CLI.Display.PrintDisplay(cards[0]);
+	CLI.Display.PrintDisplay(cards[1]);
+}
+
 // Test Functions
 //clamping();
 //conversion();
@@ -179,4 +189,5 @@ void palette() {
 //card();
 //sanitize();
 //exceptions();
-palette();
+//palette();
+harmony();
