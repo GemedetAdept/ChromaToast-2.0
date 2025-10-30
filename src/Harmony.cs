@@ -12,9 +12,7 @@ namespace ChromaToast {
 
 				Card card1 = Harmony.Offset(card0, 180);
 
-				Card[] output = new Card[2];
-				output[0] = card0;
-				output[1] = card1;
+				Card[] output = new Card[] { card0, card1 };
 
 				return output;
 			}
@@ -40,9 +38,6 @@ namespace ChromaToast {
 
 			int inputHuePrime = (int)(inputHue * 360);
 			int outputHue = Math.Abs((inputHuePrime + offset) - 360);
-
-			Console.WriteLine(inputHuePrime);
-			Console.WriteLine(outputHue);
 
 			float outputHuePrime = (float)(outputHue/360.0f);
 
