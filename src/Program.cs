@@ -172,40 +172,48 @@ void palette() {
 }
 
 void harmony() {
-	Card card0 = Generate.Random.Card();
+	Card card0 = new Card();
+	Chroma.HEX newHex = new Chroma.HEX("E3405C");
+	card0.InputChroma(newHex);
 
 	Console.WriteLine("\n| Complementary Harmony Pattern |");
-	Card[] cards0 = Generate.Random.PureComplementary();
+	//Card[] cards0 = Generate.Random.PureComplementary();
+	Card[] cards0 = Generate.PurePalette.Complementary(card0);
 	CLI.Display.PrintDisplay(cards0[0]);
 	CLI.Display.PrintDisplay(cards0[1]);
 
 	Console.WriteLine("\n| SplitComplementary Harmony Pattern |");
-	Card[] cards1 = Generate.Random.PureSplitComplementary();
+	//Card[] cards1 = Generate.Random.PureSplitComplementary();
+	Card[] cards1 = Generate.PurePalette.SplitComplementary(card0);
 	CLI.Display.PrintDisplay(cards1[0]);
 	CLI.Display.PrintDisplay(cards1[1]);
 	CLI.Display.PrintDisplay(cards1[2]);
 
 	Console.WriteLine("\n| Analogous Harmony Pattern |");
-	Card[] cards2 = Generate.Random.PureAnalogous();
+	//Card[] cards2 = Generate.Random.PureAnalogous();
+	Card[] cards2 = Generate.PurePalette.Analogous(card0);
 	CLI.Display.PrintDisplay(cards2[0]);
 	CLI.Display.PrintDisplay(cards2[1]);
 	CLI.Display.PrintDisplay(cards2[2]);
 
 	Console.WriteLine("\n| Triadic Harmony Pattern |");
-	Card[] cards3 = Generate.Random.PureTriadic();
+	//Card[] cards3 = Generate.Random.PureTriadic();
+	Card[] cards3 = Generate.PurePalette.Triadic(card0);
 	CLI.Display.PrintDisplay(cards3[0]);
 	CLI.Display.PrintDisplay(cards3[1]);
 	CLI.Display.PrintDisplay(cards3[2]);
 
 	Console.WriteLine("\n| Tetradic Harmony Pattern |");
-	Card[] cards4 = Generate.Random.PureTetradic();
+	//Card[] cards4 = Generate.Random.PureTetradic();
+	Card[] cards4 = Generate.PurePalette.Tetradic(card0);
 	CLI.Display.PrintDisplay(cards4[0]);
 	CLI.Display.PrintDisplay(cards4[1]);
 	CLI.Display.PrintDisplay(cards4[2]);
 	CLI.Display.PrintDisplay(cards4[3]);
 
 	Console.WriteLine("\n| Square Harmony Pattern |");
-	Card[] cards5 = Generate.Random.PureSquare();
+	//Card[] cards5 = Generate.Random.PureSquare();
+	Card[] cards5 = Generate.PurePalette.Square(card0);
 	CLI.Display.PrintDisplay(cards5[0]);
 	CLI.Display.PrintDisplay(cards5[1]);
 	CLI.Display.PrintDisplay(cards5[2]);

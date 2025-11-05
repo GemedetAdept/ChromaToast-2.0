@@ -81,7 +81,7 @@ namespace ChromaToast {
 			}
 		}
 
-		public static Card Offset(Card input, int offset) {
+		internal static Card Offset(Card input, int offset) {
 			Chroma.HSV inputHSV = input.HSV;
 			float inputHue = inputHSV.Hue;
 			float inputSaturation = inputHSV.Saturation;
