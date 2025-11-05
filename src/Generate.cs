@@ -144,48 +144,42 @@ namespace ChromaToast {
 
 		public class PurePalette {
 			
-			public static Card[] Complementary() {
-				Card input = Generate.Random.Card();
+			public static Card[] Complementary(Card input) {
 
 				Card[] cards = Harmony.Hue.Complementary(input);
 
 				return cards;
 			}
 
-			public static Card[] SplitComplementary() {
-				Card input = Generate.Random.Card();
+			public static Card[] SplitComplementary(Card input) {
 
 				Card[] cards = Harmony.Hue.SplitComplementary(input);
 
 				return cards;
 			}
 
-			public static Card[] Analogous() {
-				Card input = Generate.Random.Card();
+			public static Card[] Analogous(Card input) {
 				
 				Card[] cards = Harmony.Hue.Analogous(input);
 
 				return cards;
 			}
 
-			public static Card[] Triadic() {
-				Card input = Generate.Random.Card();
+			public static Card[] Triadic(Card input) {
 
 				Card[] cards = Harmony.Hue.Triadic(input);
 
 				return cards;
 			}
 
-			public static Card[] Tetradic() {
-				Card input = Generate.Random.Card();
+			public static Card[] Tetradic(Card input) {
 
 				Card[] cards = Harmony.Hue.Tetradic(input);
 
 				return cards;
 			}
 
-			public static Card[] Square() {
-				Card input = Generate.Random.Card();
+			public static Card[] Square(Card input) {
 
 				Card[] cards = Harmony.Hue.Square(input);
 
