@@ -92,6 +92,54 @@ namespace ChromaToast {
 				Chroma.HEX output = new Chroma.HEX(joinedString);
 				return output;
 			}
+
+			public static Card[] PureComplementary() {
+				Card input = Generate.Random.Card();
+
+				Card[] cards = Harmony.Hue.Complementary(input);
+
+				return cards;
+			}
+
+			public static Card[] PureSplitComplementary() {
+				Card input = Generate.Random.Card();
+
+				Card[] cards = Harmony.Hue.SplitComplementary(input);
+
+				return cards;
+			}
+
+			public static Card[] PureAnalogous() {
+				Card input = Generate.Random.Card();
+
+				Card[] cards = Harmony.Hue.Analogous(input);
+
+				return cards;
+			}
+
+			public static Card[] PureTriadic() {
+				Card input = Generate.Random.Card();
+
+				Card[] cards = Harmony.Hue.Triadic(input);
+
+				return cards;
+			}
+
+			public static Card[] PureTetradic() {
+				Card input = Generate.Random.Card();
+
+				Card[] cards = Harmony.Hue.Tetradic(input);
+
+				return cards;
+			}
+
+			public static Card[] PureSquare() {
+				Card input = Generate.Random.Card();
+
+				Card[] cards = Harmony.Hue.Square(input);
+
+				return cards;
+			}
 		}
 
 		public class PurePalette {

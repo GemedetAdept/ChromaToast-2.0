@@ -175,37 +175,37 @@ void harmony() {
 	Card card0 = Generate.Random.Card();
 
 	Console.WriteLine("\n| Complementary Harmony Pattern |");
-	Card[] cards0 = Generate.PurePalette.Complementary();
+	Card[] cards0 = Generate.Random.PureComplementary();
 	CLI.Display.PrintDisplay(cards0[0]);
 	CLI.Display.PrintDisplay(cards0[1]);
 
 	Console.WriteLine("\n| SplitComplementary Harmony Pattern |");
-	Card[] cards1 = Generate.PurePalette.SplitComplementary();
+	Card[] cards1 = Generate.Random.PureSplitComplementary();
 	CLI.Display.PrintDisplay(cards1[0]);
 	CLI.Display.PrintDisplay(cards1[1]);
 	CLI.Display.PrintDisplay(cards1[2]);
 
 	Console.WriteLine("\n| Analogous Harmony Pattern |");
-	Card[] cards2 = Generate.PurePalette.Analogous();
+	Card[] cards2 = Generate.Random.PureAnalogous();
 	CLI.Display.PrintDisplay(cards2[0]);
 	CLI.Display.PrintDisplay(cards2[1]);
 	CLI.Display.PrintDisplay(cards2[2]);
 
 	Console.WriteLine("\n| Triadic Harmony Pattern |");
-	Card[] cards3 = Generate.PurePalette.Triadic();
+	Card[] cards3 = Generate.Random.PureTriadic();
 	CLI.Display.PrintDisplay(cards3[0]);
 	CLI.Display.PrintDisplay(cards3[1]);
 	CLI.Display.PrintDisplay(cards3[2]);
 
 	Console.WriteLine("\n| Tetradic Harmony Pattern |");
-	Card[] cards4 = Generate.PurePalette.Tetradic();
+	Card[] cards4 = Generate.Random.PureTetradic();
 	CLI.Display.PrintDisplay(cards4[0]);
 	CLI.Display.PrintDisplay(cards4[1]);
 	CLI.Display.PrintDisplay(cards4[2]);
 	CLI.Display.PrintDisplay(cards4[3]);
 
 	Console.WriteLine("\n| Square Harmony Pattern |");
-	Card[] cards5 = Generate.PurePalette.Square();
+	Card[] cards5 = Generate.Random.PureSquare();
 	CLI.Display.PrintDisplay(cards5[0]);
 	CLI.Display.PrintDisplay(cards5[1]);
 	CLI.Display.PrintDisplay(cards5[2]);
