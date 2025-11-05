@@ -203,6 +203,13 @@ void harmony() {
 	CLI.Display.PrintDisplay(cards4[1]);
 	CLI.Display.PrintDisplay(cards4[2]);
 	CLI.Display.PrintDisplay(cards4[3]);
+
+	Console.WriteLine("\n| Triadic Harmony Pattern |");
+	Card[] cards5 = Harmony.Hue.Square(card0);
+	CLI.Display.PrintDisplay(cards5[0]);
+	CLI.Display.PrintDisplay(cards5[1]);
+	CLI.Display.PrintDisplay(cards5[2]);
+	CLI.Display.PrintDisplay(cards5[3]);
 }
 
 // Test Functions
