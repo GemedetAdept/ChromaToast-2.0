@@ -135,6 +135,14 @@ namespace ChromaToast {
 
 				return cards;
 			}
+
+			public static Card[] Square() {
+				Card input = Generate.Random.Card();
+
+				Card[] cards = Harmony.Hue.Square(input);
+
+				return cards;
+			}
 		}
 	}
 }
