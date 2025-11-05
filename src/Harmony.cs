@@ -40,6 +40,18 @@ namespace ChromaToast {
 
 				return output;
 			}
+
+			public static Card[] Triadic(Card card0) {
+				
+				int[] offsets = new int[] { 120, 240 };
+
+				Card card1 = Harmony.Offset(card0, offsets[0]);
+				Card card2 = Harmony.Offset(card0, offsets[1]);
+
+				Card[] output = new Card[] { card0, card1, card2 };
+
+				return output;
+			}
 		}
 
 		public static Card Offset(Card input, int offset) {
