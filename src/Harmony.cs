@@ -52,6 +52,19 @@ namespace ChromaToast {
 
 				return output;
 			}
+
+			public static Card[] Tetradic(Card card0) {
+				
+				int[] offsets = new int[] { 60, 180, 240 };
+
+				Card card1 = Harmony.Offset(card0, offsets[0]);
+				Card card2 = Harmony.Offset(card0, offsets[1]);
+				Card card3 = Harmony.Offset(card0, offsets[2]);
+
+				Card[] output = new Card[] { card0, card1, card2, card3};
+
+				return output;
+			}
 		}
 
 		public static Card Offset(Card input, int offset) {
