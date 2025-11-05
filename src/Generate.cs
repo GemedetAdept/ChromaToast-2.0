@@ -111,6 +111,14 @@ namespace ChromaToast {
 
 				return cards;
 			}
+
+			public static Card[] Analogous() {
+				Card input = Generate.Random.Card();
+				
+				Card[] cards = Harmony.Hue.Analogous(input);
+
+				return cards;
+			}
 		}
 	}
 }

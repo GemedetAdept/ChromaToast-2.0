@@ -186,7 +186,7 @@ void harmony() {
 	CLI.Display.PrintDisplay(cards1[2]);
 
 	Console.WriteLine("\n| Analogous Harmony Pattern |");
-	Card[] cards2 = Harmony.Hue.Analogous(card0);
+	Card[] cards2 = Generate.PurePalette.Analogous();
 	CLI.Display.PrintDisplay(cards2[0]);
 	CLI.Display.PrintDisplay(cards2[1]);
 	CLI.Display.PrintDisplay(cards2[2]);
