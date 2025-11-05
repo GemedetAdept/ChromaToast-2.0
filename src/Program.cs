@@ -175,7 +175,7 @@ void harmony() {
 	Card card0 = Generate.Random.Card();
 
 	Console.WriteLine("\n| Complementary Harmony Pattern |");
-	Card[] cards0 = Harmony.Hue.Complementary(card0);
+	Card[] cards0 = Generate.PurePalette.Complementary();
 	CLI.Display.PrintDisplay(cards0[0]);
 	CLI.Display.PrintDisplay(cards0[1]);
 

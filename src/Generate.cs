@@ -93,5 +93,16 @@ namespace ChromaToast {
 				return output;
 			}
 		}
+
+		public class PurePalette {
+			
+			public static Card[] Complementary() {
+				Card card0 = Generate.Random.Card();
+
+				Card[] cards = Harmony.Hue.Complementary(card0);
+
+				return cards;
+			}
+		}
 	}
 }
