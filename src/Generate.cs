@@ -127,6 +127,14 @@ namespace ChromaToast {
 
 				return cards;
 			}
+
+			public static Card[] Tetradic() {
+				Card input = Generate.Random.Card();
+
+				Card[] cards = Harmony.Hue.Tetradic(input);
+
+				return cards;
+			}
 		}
 	}
 }

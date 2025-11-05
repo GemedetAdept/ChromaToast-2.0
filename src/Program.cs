@@ -198,7 +198,7 @@ void harmony() {
 	CLI.Display.PrintDisplay(cards3[2]);
 
 	Console.WriteLine("\n| Tetradic Harmony Pattern |");
-	Card[] cards4 = Harmony.Hue.Tetradic(card0);
+	Card[] cards4 = Generate.PurePalette.Tetradic();
 	CLI.Display.PrintDisplay(cards4[0]);
 	CLI.Display.PrintDisplay(cards4[1]);
 	CLI.Display.PrintDisplay(cards4[2]);
