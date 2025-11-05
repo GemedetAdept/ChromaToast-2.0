@@ -119,6 +119,14 @@ namespace ChromaToast {
 
 				return cards;
 			}
+
+			public static Card[] Triadic() {
+				Card input = Generate.Random.Card();
+
+				Card[] cards = Harmony.Hue.Triadic(input);
+
+				return cards;
+			}
 		}
 	}
 }

@@ -192,19 +192,19 @@ void harmony() {
 	CLI.Display.PrintDisplay(cards2[2]);
 
 	Console.WriteLine("\n| Triadic Harmony Pattern |");
-	Card[] cards3 = Harmony.Hue.Triadic(card0);
+	Card[] cards3 = Generate.PurePalette.Triadic();
 	CLI.Display.PrintDisplay(cards3[0]);
 	CLI.Display.PrintDisplay(cards3[1]);
 	CLI.Display.PrintDisplay(cards3[2]);
 
-	Console.WriteLine("\n| Triadic Harmony Pattern |");
+	Console.WriteLine("\n| Tetradic Harmony Pattern |");
 	Card[] cards4 = Harmony.Hue.Tetradic(card0);
 	CLI.Display.PrintDisplay(cards4[0]);
 	CLI.Display.PrintDisplay(cards4[1]);
 	CLI.Display.PrintDisplay(cards4[2]);
 	CLI.Display.PrintDisplay(cards4[3]);
 
-	Console.WriteLine("\n| Triadic Harmony Pattern |");
+	Console.WriteLine("\n| Square Harmony Pattern |");
 	Card[] cards5 = Harmony.Hue.Square(card0);
 	CLI.Display.PrintDisplay(cards5[0]);
 	CLI.Display.PrintDisplay(cards5[1]);
