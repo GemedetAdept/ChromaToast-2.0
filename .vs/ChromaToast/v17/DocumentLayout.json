@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|c:\\users\\vivia\\programming\\c#\\chromatoast\\src\\chroma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|solutionrelative:src\\chroma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|c:\\users\\vivia\\programming\\c#\\chromatoast\\src\\harmony.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|solutionrelative:src\\harmony.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|c:\\users\\vivia\\programming\\c#\\chromatoast\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|solutionrelative:src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|c:\\users\\vivia\\programming\\c#\\chromatoast\\src\\chroma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|solutionrelative:src\\chroma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D517DA42-85E3-8282-A8A2-2D5118656A94}|src\\ChromaToast.csproj|c:\\users\\vivia\\programming\\c#\\chromatoast\\src\\palette.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,7 +50,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Program.cs",
               "RelativeDocumentMoniker": "src\\Program.cs",
@@ -58,21 +58,19 @@
               "RelativeToolTip": "src\\Program.cs",
               "ViewState": "AgIAAHMAAAAAAAAAAAAcwLkAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T16:43:11.204Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T16:43:11.204Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Harmony.cs",
               "DocumentMoniker": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Harmony.cs",
               "RelativeDocumentMoniker": "src\\Harmony.cs",
               "ToolTip": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Harmony.cs",
               "RelativeToolTip": "src\\Harmony.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAmwFMAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAcwFMAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T19:05:49.046Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-30T19:05:49.046Z"
             },
             {
               "$type": "Document",
@@ -84,8 +82,7 @@
               "RelativeToolTip": "src\\Palette.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAEcAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T13:21:04.062Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T13:21:04.062Z"
             },
             {
               "$type": "Document",
@@ -97,18 +94,17 @@
               "RelativeToolTip": "src\\Generate.cs",
               "ViewState": "AgIAAI0AAAAAAAAAAAAcwJIAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T20:07:56.279Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T20:07:56.279Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Chroma.cs",
               "DocumentMoniker": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Chroma.cs",
               "RelativeDocumentMoniker": "src\\Chroma.cs",
               "ToolTip": "C:\\Users\\vivia\\Programming\\C#\\ChromaToast\\src\\Chroma.cs",
               "RelativeToolTip": "src\\Chroma.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAQwAcAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAA0AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T00:08:17.915Z",
               "EditorCaption": ""
@@ -123,8 +119,7 @@
               "RelativeToolTip": "src\\Convert.cs",
               "ViewState": "AgIAAKcAAAAAAAAAAAAswMoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T18:18:41.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T18:18:41.069Z"
             },
             {
               "$type": "Document",
@@ -136,8 +131,7 @@
               "RelativeToolTip": "src\\Card.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAzwDEAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T17:58:10.548Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T17:58:10.548Z"
             }
           ]
         }
